@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--* This is the schema-tized version of my previous XML for exercise 03. - Evan Larson *-->
+
+<!--This is a blurb describing the actions of thousands of air traffic controllers in the early 80's as well as the presidential actions afterwards. The markup is broken up into major preceding events and then responses ("event" ; "response" and from which general group), including key information like the number of employees impacted (12,000 ; "numCont") and organizations involved (PATCO ; "org").-->
+
+<?xml-model href="../SCHEMA/Larson_0921_rngex02.rnc" type="application/relax-ng-compact-syntax"?>
+<root>
+    <subject>Ronald Reagan and the Firing of the Air Traffic Controllers</subject>
+
+
+    <para n="1">On <date of="strike">August 3, 1981</date>, over <numCont type="who striked"
+            >12,000</numCont>
+        <eventOne part="1">members of the <org>Professional Air Traffic Controllers Organization
+                (PATCO)</org> walked off their jobs</eventOne>, striking for <strike factor="reasons"
+            >higher pay, shorter hours, and increased benefits</strike>. Unexpectedly, President
+            <eventTwo part="2"><people name="Ronny" info="President">Ronald Reagan</people>
+            <response from="Reagan">decided to fire the strikers</response></eventTwo>, prosecute their
+        leaders, and decertify their union. <response from="public">This swift and unwavering
+            decision was a shocking reversal of the sympathy and support Reagan showed PATCO during
+            his campaign ten months earlier, which had earned him the union’s
+            endorsement.</response>
+    </para>
+
+    <para n="2"><people name="Busch" info="Reagan expert">Andrew Busch</people>, an expert on the
+        Reagan presidency, explores this overlooked decision, showing the many ways that <response
+            from="public">it set the tone for Reagan’s two terms in the White House</response>.
+            <response from="public and gov.">It was a contested decision both within the
+            administration and in the public sphere</response>, though it ultimately proved popular.
+            <response from="Reagan">Reagan’s action demonstrated his commitment to upholding federal
+            labor law, limiting federal spending, and cutting inflation.</response> He also modeled
+        his management style of delegating to subordinates and supporting his guidance with decisive
+        judgment when necessary. </para>
+
+    <para n="3">More broadly, this decision had long-term significance that far exceeded its
+        immediate importance. The <response from="gov. and foreign">response to the PATCO strike
+            formed a pattern for future decisions and made a strong impression on foreign
+            adversaries.</response>
+        <response from="gov.">It also contributed to the declining power of unions, marking a shift
+            in labor politics that has continued</response> to this day. </para>
+
+</root>

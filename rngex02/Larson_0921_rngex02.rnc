@@ -1,0 +1,29 @@
+start = root
+root = element root {subject, para+, text}
+para = element para {n, text, mixed{(date | numCont | eventOne | strike | eventTwo | response | people)*}}
+
+eventOne = element eventOne {part, text, org, text}
+eventTwo = element eventTwo { part, people, text, response, text}
+
+n = attribute n {xsd:integer}
+subject = element subject {text}
+org = element org {text}
+strike = element strike {factor, text}
+factor = attribute factor {text}
+
+date = element date {of, text}
+of = attribute of {"strike"}
+
+numCont = element numCont {type, text}
+type = attribute type {"who striked"}
+
+
+part = attribute part {xsd:integer}
+
+people = element people {name, info, text}
+name = attribute name {text}
+info = attribute info {text}
+
+response = element response {from, text}
+from = attribute from {text}
+
