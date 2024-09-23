@@ -1,0 +1,31 @@
+start = root
+root = element root {letter+}
+
+letter = element letter {num, to, mixed{(date | people | location | act | timeframe | question | response | closing)*}}
+
+num = attribute num {"first" | "second"}
+to = attribute to {"to John" | "to Francis"}
+
+date = element date {when, of, text}
+when = attribute when {xsd:date}
+of = attribute of {"coppolasLetter"}
+
+people = element people {who, known, text}
+who = attribute who {"John Lennon" | "Francis Ford Coppola"}
+known = attribute known {"musician" | "filmmaker"}
+
+location = element location {n, text}
+n = attribute n {xsd:integer}
+
+act = element act {text}
+
+timeframe = element timeframe {text}
+
+question = element question {typo, text}
+typo = element typo {correct, text}
+correct = attribute correct {"too" | "if"}
+
+response = element response {text, mixed{(reason+)*}}
+reason = element reason {text, mixed{(typo)*}}
+
+closing = element closing {text}

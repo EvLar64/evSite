@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--The following is markup of a letter exchange that took place between filmmaker Francis Ford Coppola (during the production of his film 'Apocalypse Now' in 1977) and musician John Lennon - E.L. -->
+<?xml-model href="School/OXYGEN/110/XML/Larson_0923_rngex03.rnc" type="application/relax-ng-compact-syntax"?>
+<root><letter num="first" to="to John"><date when="1977-03-24" of="coppolasLetter">March 24th, 1977</date>:
+
+“Dear <people who="John Lennon" known="musician">John</people>,
+
+We’ve never met but, of course, I’ve always enjoyed your work.
+
+I am presently in the <location n="1">Philippines</location> <act>making “APOCALYPSE NOW”</act>. <timeframe>I’ve been here eight months, expect to be here another several months</timeframe>. I live inside a volcano, which is a jungle paradise, where there are beautiful mineral springs; and thought <question><typo correct="if">of</typo> ever you were in the Far East or if ever you would enjoy spending a little time talking about things in general and some distant future projects that I have in mind, please, I would love to cook dinner for you and just talk, listen to music and talk about movies.</question>
+
+If coming to the Far East is difficult, then someday in the future, either in <location n="2">Los Angeles</location>, <location n="3">San Francisco</location> or <location n="4">New York</location>, I would like to meet you.
+
+<closing>Sincerely,
+Francis Coppola.</closing></letter>
+
+<letter num="second" to="to Francis">Dear <people who="Francis Ford Coppola" known="filmmaker">Frank</people>,
+
+<response>Having given a lot more thought to this idea, I realise that due to <reason>my work schedule</reason> I really don’t have the time for such a big new project.
+
+I love the book but <reason>it would take <typo correct="too">to</typo> much energy etc.</reason></response>
+
+Best wishes to you, it was nice meeting you
+
+<closing>Love,
+John Lennon</closing></letter>
+
+</root>
