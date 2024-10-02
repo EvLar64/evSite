@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<?xml-stylesheet type="text/css" href="style.css"?>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <!-- Try opening this file on your local computer in a web browser (Firefox, Chrome, etc). 
+     * On Windows, go to the browser and type control + o and browse to find this file to open it.
+     * On Mac, go to the browser and type command + o and browse to find this file to open it. 
+     Look for the text in the <title> element in the tab above the browser search bar. Do you see it? 
+    -->
+    <head>
+        <!-- What's in the <head> element is a "meta" area not for display. 
+            It holds important information about the website's contents.
+            The text inside the <title> element does show in the top tab of a web browser. 
+             The <head> is where we will include info about styling the site, too. -->
+        <title>evSite</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Here is a place where we can add a little styling code called CSS to this page. 
+            I used it to apply a background color to the body element.
+        -->
+        <style>
+            body {
+                background: #82fc6e;
+                padding: 1.1em;
+            }
+          </style>
+    </head>
+    <body>
+        <!-- CONTENT FOR DISPLAY. The <body> element holds the content we see in the display window on the web browser.-->
+        <h1>Gallery</h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="about.html">Résumé</a>
+                </li>
+                <li>
+                    <a href="gallery.html">Gallery</a>
+                </li>
+            </ul>
+        </nav>
+        <section class="flex">
+            <figure>
+                <img class="dearData" src="images/deardata.png" width="550"/>
+                <figcaption>Dear Data - Time Spent on My Laptop Over a Week</figcaption>
+            </figure>
+            <figure>
+                <img class="ND" src="images/NDbaseball.png" width="550"/>
+                <figcaption>A photo on set of a video shoot featuring puppets at a baseball stadium</figcaption>
+            </figure>
+            <figure>
+                <img class="water" src="images/water.jpeg" width="550"/>
+                <figcaption>The waters around Catalina Island</figcaption>
+            </figure>
+            <figure>
+                <img class="mountains" src="images/mountains.jpeg" width="550"/>
+                <figcaption>Some southern California mountains</figcaption>
+            </figure>
+            <figure>
+                <img class="snow" src="images/snow.jpeg" width="550"/>
+                <figcaption>The snowy wintertime roads around Behrend</figcaption>
+            </figure>
+        </section> 
+              
+    </body>    
+</html>
