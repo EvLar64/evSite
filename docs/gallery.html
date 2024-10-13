@@ -22,47 +22,146 @@
                 background: #82fc6e;
                 padding: 1.1em;
             }
+        .project-container {
+            border: 2px solid #000; 
+            padding: 20px; 
+            margin: 20px; 
+            text-align: center; 
+            background-color: #f0f0f0; 
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+        }
+        .project-label {
+            font-size: 24px; 
+            margin-bottom: 20px; 
+        }
+        .image-container {
+            display: flex; 
+            justify-content: center; 
+            gap: 10px; 
+            flex-wrap: wrap; 
+        }
+        img {
+            max-width: 100%; 
+            height: auto; 
+            flex: 1; 
+            max-width: 600px; 
+        }
+        .misc-container {
+            border: 2px solid #000; 
+            padding: 20px; 
+            margin: 20px; 
+            text-align: center; 
+            background-color: #ffcccc; 
+            display: flex; 
+            flex-direction: column;
+            align-items: center; 
+        }
+        .misc-label {
+            font-size: 24px; 
+            margin-bottom: 20px; 
+        }
+        .image-container {
+            display: flex; 
+            justify-content: center; 
+            gap: 10px; 
+            flex-wrap: wrap; 
+        }
+        img {
+            max-width: 100%; 
+            height: auto;
+            flex: 1; 
+            max-width: 650px; 
+        }
+        .art168-container {
+            border: 2px solid #000; 
+            padding: 20px; 
+            margin: 20px; 
+            text-align: center; 
+            background-color: #fffa89; 
+            display: flex; 
+            flex-direction: column;
+            align-items: center; 
+        }
+        .art168-label {
+            font-size: 24px; 
+            margin-bottom: 20px; 
+        }
+        .image-container {
+            display: flex; 
+            justify-content: center; 
+            gap: 10px; 
+            flex-wrap: wrap; 
+        }
+        img {
+            max-width: 100%; 
+            height: auto;
+            flex: 1; 
+            max-width: 650px; 
+        }
           </style>
     </head>
-    <body>
+    <body style="font-family: tahoma">
         <!-- CONTENT FOR DISPLAY. The <body> element holds the content we see in the display window on the web browser.-->
-        <h1>Gallery</h1>
+        <h1 style="font-family:monaco">Gallery</h1>
         <nav>
             <ul>
                 <li>
                     <a href="index.html">Home</a>
                 </li>
                 <li>
-                    <a href="about.html">Résumé</a>
+                    <a href="about.html">Resumé</a>
                 </li>
                 <li>
                     <a href="gallery.html">Gallery</a>
                 </li>
-                <li><a href="3dscan.html">3D Scan</a></li>
+                <li>
+                    <a href="whatsThis.html">What's This?</a>
+                </li>
             </ul>
         </nav>
-        <section class="flex">
-            <figure>
-                <img class="dearData" src="images/deardata.png" width="550"/>
-                <figcaption>Dear Data - Time Spent on My Laptop Over a Week</figcaption>
-            </figure>
-            <figure>
-                <img class="ND" src="images/NDbaseball.png" width="550"/>
-                <figcaption>A photo on set of a video shoot featuring puppets at a baseball stadium</figcaption>
-            </figure>
-            <figure>
-                <img class="water" src="images/water.jpeg" width="550"/>
-                <figcaption>The waters around Catalina Island</figcaption>
-            </figure>
-            <figure>
-                <img class="mountains" src="images/mountains.jpeg" width="550"/>
-                <figcaption>Some southern California mountains</figcaption>
-            </figure>
-            <figure>
-                <img class="snow" src="images/snow.jpeg" width="550"/>
-                <figcaption>The snowy wintertime roads around Behrend</figcaption>
-            </figure>
-        </section> 
+        
+        <p>Click <strong><u><a href="https://github.com/EvLar64/evSite">here</a></u></strong> to visit the <strong>evSite repository</strong>!</p>
               
+        <div class="project-container">
+            <div class="project-label">Projects</div>
+            <div class="image-container">
+                <figure><img src="images/deardata.png" alt="Dear Data"></img>
+                <figcaption><u>Dear Data Project</u>: Time Spent on My Laptop Over 1 Week</figcaption></figure>
+                <figure><iframe width="640" height="360" data-original-width="640" data-original-height="360" src="https://www.thinglink.com/view/scene/1899614118449513125" style="border: none">
+                </iframe>
+                <script src="//cdn.thinglink.me/jse/responsive.js"></script>
+                <figcaption><u>3D Room Scan Project</u> - Classroom in Kochel</figcaption></figure>
+            </div>
+        </div>
+        <div class="art168-container">
+            <div class="art168-label">Art 168 Sketches</div>
+            <div class="image-container">
+                <img src="images/Larson_0902_sketch01.jpg"></img>
+                <img src="images/Larson_0902_sketch02.jpg"></img>
+                <img src="images/Larson_0908_sketch03.jpg"></img>
+                <img src="images/Larson_0908_sketch04.jpg"></img>
+                <img src="images/Larson_0915_sketch06.jpg"></img>
+                <img src="images/Larson_0925_sketch08.jpg"></img>
+                <img src="images/Larson_1001_sketch10.png"></img>
+                <img src="images/Larson_1007_sketch12.png"></img>
+            </div>
+        </div>
+        <div class="misc-container">
+            <div class="misc-label">Misc.</div>
+            <div class="image-container">
+                <figure><img src="images/tater.jpeg" alt="Tater"></img>
+                <figcaption>Tater the goldendoodle peeking out at the cold morning</figcaption></figure>
+                <figure><img src="images/NDbaseball.png" alt="ND Baseball"></img>
+                <figcaption>An on-set photo of a video shoot featuring puppets at the Seawolves stadium</figcaption></figure>
+                <figure><img src="images/mountains.jpeg" alt="Mountains"></img>
+                <figcaption>Some southern California mountains</figcaption></figure>
+                <figure><img src="images/snow.jpeg" alt="Snow"></img>
+                <figcaption>The snowy, wintertime roads around Behrend</figcaption></figure>
+                <figure><img src="images/water.jpeg" alt="Water"></img>
+                <figcaption>The waters surrounding Catalina Island</figcaption></figure>
+            </div>
+        </div>
     </body>    
 </html>
