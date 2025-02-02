@@ -1,0 +1,39 @@
+Movie Data Sheet Conversion Steps - EL
+
+Find: \n
+Replace: </movie>\n<movie>
+- Wrapped movie tags around each line. Originally had it the reverse way (start tag, then end tag), but that had the opposite effect so I switched the two. Then I manually took out the remaining end tag in that first line, and missing end tag in the last.
+
+Find: &
+Replace: &amp;
+- Fixed &'s
+
+Find: (<movie>)(.+?)(\t)
+Replace: \n\1<title>\2</title>\3
+- found titles and wrapped title tags around each of them
+
+Find: (<title>)(.+?)(</title>)
+Replace: \n\1\2\3\n
+- takes new title clusters and gives them each their own line
+
+Find: (<title>)(.+?)(</title>)
+Replace: \t\1\2\3
+- tabs each of the title blocks over
+
+Find: (\t)(\d{4})
+Replace: \1<date>\2</date>
+- Finds 4-digit blocks using their tab and wraps date tags around them
+
+Find: (</date>)(\t)(.+?)(\t)
+Replace: \1\n\2<location>\3</location>
+- takes everything from the last date tag to right before runtime, wraps it in a location tag, and gives it a new line/tab
+
+Find: (</location>)(\d+)(.+?)(</movie>)
+Replace: \1\n\t<time unit="min">\2</time>\n\4
+- similar to previous step, it identifies using the end of the last tag; it takes the digit (ignoring the lefotover "min" string) and wraps it in a time tag (with "min" attribute) on its own line (while also putting the ending movie tag on its own line too).
+
+- Manually got rid of the labels on the very first line
+
+Find: (^.+)
+Replace: <xml>\n\1\n</xml>
+- took entire file and finally wrapped it in an xml tag
