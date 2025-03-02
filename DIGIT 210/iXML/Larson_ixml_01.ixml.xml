@@ -1,0 +1,15 @@
+{ixml Exercise #1 - E. Larson}
+
+     film: (newline?,title,year,country,runtime). 
+    -films: (film)+. 
+     title: ([L];space;digit;[P])+,tab. 
+      year: ("1";"2"),("9";"0"),digit,digit,tab. 
+   country: ([L];space;[P])+,tab. 
+   runtime: (digit+," min";"N/A"),newline. 
+ movieData: films. 
+  -newline: -#d?,-#a. 
+      -tab: -#9. 
+    -digit: ["0"-"9"]. 
+    -space: -" ". 
+
+{This is what I'll call the cleanest rendition I was able to get so far. Through my efforts to this point, I feel like each of my elements are doing what they should; and when using the browser iXML processor, it seemed to work for a full first line of text. However, when it gets to the second line, it creates an error saying that it's expecting nothing. I'm not sure where the issue lies (if it's a newline grammar issue, or something else), but I can't seem to get it to repeat for the rest of the text file after the first line. - EL}
