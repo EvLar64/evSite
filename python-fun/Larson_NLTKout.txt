@@ -1,0 +1,65 @@
+
+Python/NLTK Assignment (w/ POS) - EL
+
+Sample of Synsets on the word 'take' (smoke test):
+['return', 'issue', 'take', 'takings', 'proceeds', 'yield', 'payoff'] 7
+['take'] 1
+['take'] 1
+['take', 'occupy', 'use_up'] 3
+['lead', 'take', 'direct', 'conduct', 'guide'] 5
+['take', 'get_hold_of'] 2
+['assume', 'acquire', 'adopt', 'take_on', 'take'] 5
+['take', 'read'] 2
+['bring', 'convey', 'take'] 3
+['take'] 1
+['take'] 1
+['choose', 'take', 'select', 'pick_out'] 4
+['accept', 'take', 'have'] 3
+['fill', 'take', 'occupy'] 3
+['consider', 'take', 'deal', 'look_at'] 4
+['necessitate', 'ask', 'postulate', 'need', 'require', 'take', 'involve', 'call_for', 'demand'] 9
+['take'] 1
+['film', 'shoot', 'take'] 3
+['remove', 'take', 'take_away', 'withdraw'] 4
+['consume', 'ingest', 'take_in', 'take', 'have'] 5
+['take', 'submit'] 2
+['take', 'accept'] 2
+['take'] 1
+['assume', 'take', 'strike', 'take_up'] 4
+['accept', 'admit', 'take', 'take_on'] 4
+['take'] 1
+['learn', 'study', 'read', 'take'] 4
+['claim', 'take', 'exact'] 3
+['take', 'make'] 2
+['aim', 'take', 'train', 'take_aim', 'direct'] 5
+['take'] 1
+['carry', 'pack', 'take'] 3
+['lease', 'rent', 'hire', 'charter', 'engage', 'take'] 6
+['subscribe', 'subscribe_to', 'take'] 3
+['take'] 1
+['take'] 1
+['take', 'have'] 2
+['claim', 'take'] 2
+['accept', 'take'] 2
+['contain', 'take', 'hold'] 3
+['take'] 1
+['drive', 'take'] 2
+['take'] 1
+['contract', 'take', 'get'] 3
+
+Short sample output from script using directory:
+The Breakfast Club
+
+                    written and directed by
+                         John Hughes
+
+Successfully able to find multiple filepaths from one collection
+
+/Users/evanl/Desktop/GitStuff/evSite/python-fun/hughesColl/ferris.txt
+/Users/evanl/Desktop/GitStuff/evSite/python-fun/hughesColl/sixteen.txt
+/Users/evanl/Desktop/GitStuff/evSite/python-fun/hughesColl/breakfast.txt
+
+Total number of adjectives in the corpus (all three scripts): 2877 
+The 50 most common adjectives used in the three screenplays are:
+[('other', 55), ('little', 46), ('old', 43), ('open', 41), ('good', 40), ('CONTINUED', 39), ('big', 30), ('sure', 30), ('real', 30), ('serious', 27), ('Brian', 26), ('next', 26), ('better', 24), ('sorry', 24), ('great', 23), ('wrong', 22), ('first', 22), ('okay', 21), ('sick', 21), ('young', 20), ('last', 19), ('right', 19), ('much', 19), ('few', 18), ('bad', 18), ('high', 17), ('nice', 17), ('more', 16), ('angry', 14), ('weird', 14), ('deep', 14), ('happy', 14), ('crazy', 13), ('front', 13), ('black', 13), ('second', 13), ('best', 13), ('whole', 12), ('cool', 12), ('huge', 12), ('such', 11), ('same', 11), ('dead', 11), ('nervous', 11), ('many', 11), ('fat', 11), ('own', 11), ('only', 11), ('beautiful', 11), ('long', 11)]
+
