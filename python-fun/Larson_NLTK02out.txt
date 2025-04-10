@@ -1,0 +1,107 @@
+
+Python/NLTK Assignment (w/ POS) - EL
+
+Sample of Synsets on the word 'take' (smoke test):
+['return', 'issue', 'take', 'takings', 'proceeds', 'yield', 'payoff'] 7
+['take'] 1
+['take'] 1
+['take', 'occupy', 'use_up'] 3
+['lead', 'take', 'direct', 'conduct', 'guide'] 5
+['take', 'get_hold_of'] 2
+['assume', 'acquire', 'adopt', 'take_on', 'take'] 5
+['take', 'read'] 2
+['bring', 'convey', 'take'] 3
+['take'] 1
+['take'] 1
+['choose', 'take', 'select', 'pick_out'] 4
+['accept', 'take', 'have'] 3
+['fill', 'take', 'occupy'] 3
+['consider', 'take', 'deal', 'look_at'] 4
+['necessitate', 'ask', 'postulate', 'need', 'require', 'take', 'involve', 'call_for', 'demand'] 9
+['take'] 1
+['film', 'shoot', 'take'] 3
+['remove', 'take', 'take_away', 'withdraw'] 4
+['consume', 'ingest', 'take_in', 'take', 'have'] 5
+['take', 'submit'] 2
+['take', 'accept'] 2
+['take'] 1
+['assume', 'take', 'strike', 'take_up'] 4
+['accept', 'admit', 'take', 'take_on'] 4
+['take'] 1
+['learn', 'study', 'read', 'take'] 4
+['claim', 'take', 'exact'] 3
+['take', 'make'] 2
+['aim', 'take', 'train', 'take_aim', 'direct'] 5
+['take'] 1
+['carry', 'pack', 'take'] 3
+['lease', 'rent', 'hire', 'charter', 'engage', 'take'] 6
+['subscribe', 'subscribe_to', 'take'] 3
+['take'] 1
+['take'] 1
+['take', 'have'] 2
+['claim', 'take'] 2
+['accept', 'take'] 2
+['contain', 'take', 'hold'] 3
+['take'] 1
+['drive', 'take'] 2
+['take'] 1
+['contract', 'take', 'get'] 3
+
+Short sample output from script using directory:
+The Breakfast Club
+
+                    written and directed by
+                         John Hughes
+
+Successfully able to find multiple filepaths from one collection
+
+/Users/evanl/Desktop/GitStuff/evSite/python-fun/hughesColl/ferris.txt
+/Users/evanl/Desktop/GitStuff/evSite/python-fun/hughesColl/sixteen.txt
+/Users/evanl/Desktop/GitStuff/evSite/python-fun/hughesColl/breakfast.txt
+
+Total number of adjectives in the corpus (all three scripts): 2877 
+
+The 50 most common adjectives used in the three screenplays are:
+[('other', 55), ('little', 46), ('old', 43), ('open', 41), ('good', 40), ('CONTINUED', 39), ('big', 30), ('sure', 30), ('real', 30), ('serious', 27), ('Brian', 26), ('next', 26), ('better', 24), ('sorry', 24), ('great', 23), ('wrong', 22), ('first', 22), ('okay', 21), ('sick', 21), ('young', 20), ('last', 19), ('right', 19), ('much', 19), ('few', 18), ('bad', 18), ('high', 17), ('nice', 17), ('more', 16), ('angry', 14), ('weird', 14), ('deep', 14), ('happy', 14), ('crazy', 13), ('front', 13), ('black', 13), ('second', 13), ('best', 13), ('whole', 12), ('cool', 12), ('huge', 12), ('such', 11), ('same', 11), ('dead', 11), ('nervous', 11), ('many', 11), ('fat', 11), ('own', 11), ('only', 11), ('beautiful', 11), ('long', 11)]
+
+Part II of Assignment:
+
+Example of Morphy Used on the Word 'Churches'
+church
+
+The total verb count across all three screenplays:
+2121
+The set of unique verbs present throughout all of the three project screenplays:
+['accept', 'add', 'admire', 'admit', 'adore', 'alientate', 'all', 'announce', 'annoyed~', 'answer', 'anymore', 'apologize', 'appear', 'appreciate', 'approve', 'ask', 'asshole', 'assist', 'assure', 'babe', 'back', 'backs', 'bail', 'bait', 'balance', 'bangs', 'bankrupt', 'barf', 'bark', 'be', 'beat', 'become', 'begin', 'believe', 'belong', 'bet', 'better', 'bitch', 'blaze', 'blow', 'boredom', 'borrow', 'bother', 'break', 'breathe', 'bring', 'brush', 'buddy', 'bug', 'bum', 'burn', 'bury', 'bust', 'buy', 'call', 'camera', 'care', 'cat', 'catch', 'cause', 'change', 'chat', 'check', 'checks', 'cheer', 'choose', 'chuck', 'clean', 'clear', 'coast', 'come', 'commit', 'compute', 'conceal', 'concentrate', 'condescend', 'confirm', 'congradulate', 'consider', 'console', 'consume', 'consummate', 'continue', 'contribute', 'control', 'converse', 'convince', 'cool', 'cooperate', 'count', 'cover', 'crawl', 'cross', 'cry', 'curls', 'cut', 'd', 'deal', 'dear', 'decide', 'defend', 'deliver', 'depress', 'describe', 'deserve', 'destroy', 'die', 'digs', 'disappear', 'discuss', 'disturb', 'ditch', 'divorce', 'do', 'double', 'doubt', 'drink', 'drinks', 'drive', 'drunk', 'dump', 'ear', 'ease', 'eat', 'embarrass', 'end', 'enjoy', 'envy', 'escape', 'everybody', 'exit', 'expect', 'explain', 'expose', 'face', 'faint', 'fall', 'fault', 'feed', 'feel', 'fertilize', 'figure', 'fill', 'find', 'fit', 'fix', 'flip', 'flops', 'flunk', 'follow', 'forever', 'forget', 'forgive', 'foul', 'freak', 'freezes', 'fuck', 'fuckin', 'funny', 'gag', 'gawks', 'get', 'give', 'go', 'goddamn', 'goin', 'gon', 'gotten', 'grab', 'grabs', 'graduate', 'greet', 'grief', 'groove', 'grovel', 'guess', 'guy', 'guys', 'hack', 'had', 'handle', 'hang', 'happen', 'hard', 'have', 'head', 'heads', 'hear', 'hell', 'help', 'her', 'herself', 'hi', 'hide', 'hit', 'hold', 'honks', 'howls', 'huh', 'hurls', 'hurry', 'hurt', 'ignore', 'ill.', 'imagine', 'impress', 'increase', 'inform', 'insult', 'interface', 'jam', 'jeopardize', 'jerk', 'jerks', 'join', 'judge', 'keep', 'kick', 'kill', 'kinda', 'kiss', 'kisses', 'knock', 'know', 'laugh', 'learn', 'leave', 'let', 'lick', 'lie', 'like', 'likes', 'listen', 'live', 'lock', 'look', 'looks', 'lose', 'love', 'maintain', 'make', 'manage', 'marry', 'matter', 'mean', 'meet', 'mention', 'mess', 'microwave', 'milk', 'mind', 'miss', 'motions', 'move', 'nail', 'name', 'need', 'okay', 'open', 'overturn', 'owe', 'own', 'paint', 'palms', 'park', 'participate', 'pass', 'pay', 'peak', 'peek', 'pick', 'picture', 'piss', 'plan', 'play', 'please', 'point', 'ponder', 'pops', 'pose', 'pour', 'pretend', 'prevent', 'produce', 'protest', 'prove', 'pry', 'puke', 'pull', 'pulled', 'pumps', 'put', 'puts', 'quite', 'raid', 'reach', 'read', 'realize', 'recognize', 'record', 'recover', 'recovers', 'refuse', 'relate', 'relax', 'release', 'remember', 'remote', 'resentful', 'resist', 'resolve', 'respect', 'respond', 'return', 'returns', 'reveal', 'ride', 'rinse', 'rips', 'rise', 'risk', 'rob', 'rolls', 'rubbish', 'rubs', 'ruckus', 'ruin', 'run', 'sacrifice', 'saunter', 'say', 'scoots', 'scopes', 'score', 'scream', 'screw', 'search', 'sedate', 'see', 'seem', 'send', 'separate', 'set', 'seventeen', 'shake', 'shakes', 'shame', 'shave', 'shit', 'shock', 'shoot', 'show', 'shut', 'sic', 'simulate', 'sir', 'sit', 'slap', 'sleep', 'slip', 'slow', 'slumps', 'smile', 'smiles', 'smoke', 'snaps', 'sneak', 'sock', 'sort', 'sorta', 'sound', 'spare', 'spaz-out', 'speak', 'speeds', 'spell', 'spend', 'spite', 'squat', 'squeal', 'squeeze', 'stand', 'stay', 'steal', 'stick', 'sticks', 'stop', 'study', 'stutter', 'subject', 'sue', 'suggest', 'summons', 'support', 'suppose', 'surprise', 'swallow', 'swear', 'sweetie', 'swell', 'take', 'talk', 'tap', 'tear', 'teenage', 'tell', 'thank', 'think', 'thirty', 'throw', 'tolerate', 'touch', 'toy', 'trash', 'treat', 'trust', 'try', 'turn', 'twenty', 'uh', 'understand', 'use', 'violate', 'vote', 'wait', 'wake', 'walk', 'walks', 'wan', 'want', 'wash', 'waste', 'watch', 'wave', 'wear', 'whatever', 'whips', 'whistle', 'wipes', 'wish', 'wonder', 'work', 'worry', 'wrestle', 'write', 'yack', 'yank', 'yawn']
+Most frequent bigrams:
+
+('-', 'DAY')
+('CUT', 'TO')
+('TO', ':')
+('We', 'see')
+('do', "n't")
+('I', "'m")
+('gon', 'na')
+('.', 'BENDER')
+('(', 'to')
+('wan', 'na')
+('.', 'FERRIS')
+('I', "'m")
+('CU', '.')
+('INT', '.')
+('.', 'He')
+('It', "'s")
+('EXT', '.')
+('do', "n't")
+("'S", 'VOICE')
+('FERRIS', "'")
+('I', "'m")
+('INT', '.')
+('.', 'She')
+('.', 'He')
+('The', 'Geek')
+('.', 'SAM')
+('do', "n't")
+('It', "'s")
+('on', 'the')
+('.', 'The')
