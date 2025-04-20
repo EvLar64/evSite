@@ -70,7 +70,6 @@ text_ferris2 = Text(ferris2)
 text_sixteen2 = Text(sixteen2)
 text_breakfast2 = Text(breakfast2)
 
-
 # Concordance examples of different words for each movie
 print()
 print("Concordance of the word 'school' within the script for Ferris Bueller:")
@@ -101,29 +100,29 @@ character_and_scriptWords = ["Ferris", "FERRIS", "ROONEY", "DONG","Dong","Rooney
                              "SAM", "Sam","GEEK", "CAROLINE", "Caroline", "JAKE","Jake",
                              "CONTINUED","CUT","EXT","INT", "CU", "DAY", "NIGHT","VOICE",
                              "Ginny","GINNY", "ROOM", "RANDY", "Randy"]
-filtered0_ferris2 = {word.lower() for word in ferris2}
-filtered0_sixteen2 = {word.lower() for word in sixteen2}
-filtered0_breakfast2 = {word.lower() for word in breakfast2}
+filtered_cap_ferris2 = {word.lower() for word in ferris2}
+filtered_cap_sixteen2 = {word.lower() for word in sixteen2}
+filtered_cap_breakfast2 = {word.lower() for word in breakfast2}
 
-filtered_num_ferris2 = [word for word in filtered0_ferris2 if not word.isdigit()]
-filtered_num_sixteen2 = [word for word in filtered0_sixteen2 if not word.isdigit()]
-filtered_num_breakfast2 = [word for word in filtered0_breakfast2 if not word.isdigit()]
+filtered_num_ferris2 = [word for word in filtered_cap_ferris2 if not word.isdigit()]
+filtered_num_sixteen2 = [word for word in filtered_cap_sixteen2 if not word.isdigit()]
+filtered_num_breakfast2 = [word for word in filtered_cap_breakfast2 if not word.isdigit()]
 
-filtered_ferris2 = [word for word in filtered_num_ferris2 if word not in stop_words]
-filtered_sixteen2 = [word for word in filtered_num_sixteen2 if word not in stop_words]
-filtered_breakfast2 = [word for word in filtered_num_breakfast2 if word not in stop_words]
+filtered_stop_ferris2 = [word for word in filtered_num_ferris2 if word not in stop_words]
+filtered_stop_sixteen2 = [word for word in filtered_num_sixteen2 if word not in stop_words]
+filtered_stop_breakfast2 = [word for word in filtered_num_breakfast2 if word not in stop_words]
 
-filtered2_ferris2 = [word for word in filtered_ferris2 if word not in character_and_scriptWords]
-filtered2_sixteen2 = [word for word in filtered_sixteen2 if word not in character_and_scriptWords]
-filtered2_breakfast2 = [word for word in filtered_breakfast2 if word not in character_and_scriptWords]
+filtered_script_ferris2 = [word for word in filtered_stop_ferris2 if word not in character_and_scriptWords]
+filtered_script_sixteen2 = [word for word in filtered_stop_sixteen2 if word not in character_and_scriptWords]
+filtered_script_breakfast2 = [word for word in filtered_stop_breakfast2 if word not in character_and_scriptWords]
 
-ferris_wordCounts = Counter(filtered2_ferris2)
-sixteen_wordCounts = Counter(filtered2_sixteen2)
-breakfast_wordCounts = Counter(filtered2_breakfast2)
+ferris_unique = Counter(filtered_script_ferris2)
+sixteen_unique = Counter(filtered_script_sixteen2)
+breakfast_unique = Counter(filtered_script_breakfast2)
 
-ferris_top20 = ferris_wordCounts.most_common(20)
-sixteen_top20 = sixteen_wordCounts.most_common(20)
-breakfast_top20 = breakfast_wordCounts.most_common(20)
+ferris_top20 = ferris_unique.most_common(20)
+sixteen_top20 = sixteen_unique.most_common(20)
+breakfast_top20 = breakfast_unique.most_common(20)
 
 print()
 print("20 instances of 'unique' words within each script (after removing script words, 'stop' words, and numbers):")
@@ -193,23 +192,23 @@ print()
 
 print("Prepositions")
 print("10 most common prepositions in Ferris Bueller -")
-ferrisnoun = [word for word, tag in tagged_ferris if tag.startswith('IN')]
-ferris_noun = FreqDist(ferrisnoun)
-ferris_common_noun = ferris_noun.most_common(10)
-print(ferris_common_noun)
+ferrisprep = [word for word, tag in tagged_ferris if tag.startswith('IN')]
+ferris_prep = FreqDist(ferrisprep)
+ferris_common_prep = ferris_prep.most_common(10)
+print(ferris_common_prep)
 print("Total number of unique prepositions -")
-print(len(set(ferrisnoun)))
+print(len(set(ferrisprep)))
 print("10 most common prepositions in Sixteen Candles -")
-sixteennoun = [word for word, tag in tagged_sixteen if tag.startswith('IN')]
-sixteen_noun = FreqDist(sixteennoun)
-sixteen_common_noun = sixteen_noun.most_common(10)
-print(sixteen_common_noun)
+sixteenprep = [word for word, tag in tagged_sixteen if tag.startswith('IN')]
+sixteen_prep = FreqDist(sixteenprep)
+sixteen_common_prep = sixteen_prep.most_common(10)
+print(sixteen_common_prep)
 print("Total number of unique prepositions -")
-print(len(set(sixteennoun)))
+print(len(set(sixteenprep)))
 print("10 most common prepositions in Breakfast Club -")
-breakfastnoun = [word for word, tag in tagged_breakfast if tag.startswith('IN')]
-breakfast_noun = FreqDist(breakfastnoun)
-breakfast_common_noun = breakfast_noun.most_common(10)
-print(breakfast_common_noun)
+breakfastprep = [word for word, tag in tagged_breakfast if tag.startswith('IN')]
+breakfast_prep = FreqDist(breakfastprep)
+breakfast_common_prep = breakfast_prep.most_common(10)
+print(breakfast_common_prep)
 print("Total number of unique prepositions -")
-print(len(set(breakfastnoun)))
+print(len(set(breakfastprep)))

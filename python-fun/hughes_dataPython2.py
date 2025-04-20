@@ -1,8 +1,10 @@
 import matplotlib.pyplot as plt
 from nltk.text import Text
+from nltk import pos_tag
 from nltk import word_tokenize
-from nltk.corpus import PlaintextCorpusReader
+from nltk import FreqDist
 import numpy as np
+import re
 
 with open("ferris.txt",'r') as file:
     ferris=file.read()
@@ -18,6 +20,30 @@ sixteen1 = word_tokenize(sixteen)
 text_sixteen1 = Text(sixteen1)
 breakfast1 = word_tokenize(breakfast)
 text_breakfast1 = Text(breakfast1)
+
+ferris2 = re.findall(r"\b\w+(?:'\w+)?\b", ferris)
+breakfast2 = re.findall(r"\b\w+(?:'\w+)?\b", breakfast)
+sixteen2 = re.findall(r"\b\w+(?:'\w+)?\b", sixteen)
+
+tagged_ferris = pos_tag(ferris2)
+tagged_breakfast = pos_tag(breakfast2)
+tagged_sixteen = pos_tag(sixteen2)
+
+ferrisverbs = [word for word, tag in tagged_ferris if tag.startswith('VB')]
+sixteenverbs = [word for word, tag in tagged_sixteen if tag.startswith('VB')]
+breakfastverbs = [word for word, tag in tagged_breakfast if tag.startswith('VB')]
+
+ferrisadj = [word for word, tag in tagged_ferris if tag.startswith('JJ')]
+sixteenadj = [word for word, tag in tagged_sixteen if tag.startswith('JJ')]
+breakfastadj = [word for word, tag in tagged_breakfast if tag.startswith('JJ')]
+
+ferrisprep = [word for word, tag in tagged_ferris if tag.startswith('IN')]
+sixteenprep = [word for word, tag in tagged_sixteen if tag.startswith('IN')]
+breakfastprep = [word for word, tag in tagged_breakfast if tag.startswith('IN')]
+
+ferris_verbs = FreqDist(ferrisverbs)
+sixteen_verbs = FreqDist(sixteenverbs)
+breakfast_verbs = FreqDist(breakfastverbs)
 
 # Lexical Dispersion for words pertaining to identity or belonging in the three movies
 identityWords = ["jock","nerd","geek","princess",
@@ -67,10 +93,33 @@ plt.bar(name_counts.keys(), name_counts.values(), color=colors2, edgecolor='blac
 plt.xlabel('Characters')
 plt.ylabel('Screenplay Mentions')
 plt.title('Frequency of Main Character Mentions in Breakfast Club', fontweight='bold')
-plt.show()
 
 # using regex, found :
 # lines of dialogue by Ferris
 ferrisLines = 298
 # Ferris lines spoken to the camera
 ferris_fourthWallLines = 39
+
+movies = ['Verbs', 'Adjectives', 'Prepositions']
+frequencies1 = [len(ferrisverbs), len(ferrisadj), len(ferrisprep)]
+plt.figure(5)
+plt.bar(movies, frequencies1, color='#FF8C42', edgecolor='black', linewidth=2)
+plt.xlabel('Part of Speech')
+plt.ylabel('Frequencies')
+plt.title('Part of Speech Use in Ferris Bueller', fontweight='bold')
+
+frequencies2 = [len(breakfastverbs), len(breakfastadj), len(breakfastprep)]
+plt.figure(6)
+plt.bar(movies, frequencies2, color='#D46A6A', edgecolor='black', linewidth=2)
+plt.xlabel('Part of Speech')
+plt.ylabel('Frequencies')
+plt.title('Part of Speech Use in Breakfast Club', fontweight='bold')
+
+frequencies3 = [len(sixteenverbs), len(sixteenadj), len(sixteenprep)]
+plt.figure(7)
+plt.bar(movies, frequencies3, color='#F5DEB3', edgecolor='black', linewidth=2)
+plt.xlabel('Part of Speech')
+plt.ylabel('Frequencies')
+plt.title('Part of Speech Use in Sixteen Candles', fontweight='bold')
+
+plt.show()
