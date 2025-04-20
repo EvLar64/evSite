@@ -1,10 +1,4 @@
-import nltk
-import nltk.corpus
-import matplotlib
-import os
 import matplotlib.pyplot as plt
-import matplotlib.cm as cm
-from nltk.draw import dispersion_plot
 from nltk.text import Text
 from nltk import word_tokenize
 from nltk.corpus import PlaintextCorpusReader
