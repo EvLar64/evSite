@@ -1,13 +1,10 @@
-import matplotlib.pyplot as plt
 from collections import Counter
 from nltk import pos_tag
 from nltk import FreqDist
 from nltk.tokenize import word_tokenize
 from nltk.text import Text
-import numpy as np
 from nltk.corpus import stopwords
 import re
-import nltk
 
 stop_words = set(stopwords.words('english'))
 

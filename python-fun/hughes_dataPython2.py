@@ -74,3 +74,9 @@ plt.xlabel('Characters')
 plt.ylabel('Screenplay Mentions')
 plt.title('Frequency of Main Character Mentions in Breakfast Club', fontweight='bold')
 plt.show()
+
+# using regex, found :
+# lines of dialogue by Ferris
+ferrisLines = 298
+# Ferris lines spoken to the camera
+ferris_fourthWallLines = 39
