@@ -67,6 +67,7 @@ sixteen_ext_count = sixteen.count(sixteenEXT)
 colors1 = ['#FF6EC7', '#00FFFF']
 colors2 = ['#FF00FF', '#98FF98']
 colors3 = ['#FFFF66', '#9B30FF']
+colors4 = ['#006C5B','#FF6B00']
 
 plt.figure(1)
 plt.title('Interior vs. Exterior Locations in Ferris Bueller',  fontweight='bold')
@@ -121,5 +122,24 @@ plt.bar(movies, frequencies3, color='#F5DEB3', edgecolor='black', linewidth=2)
 plt.xlabel('Part of Speech')
 plt.ylabel('Frequencies')
 plt.title('Part of Speech Use in Sixteen Candles', fontweight='bold')
+
+brian_d = 121
+andrew_d = 140
+claire_d = 154
+allison_d = 71
+bender_d = 213
+vernon_d = 87
+carl_d = 21
+misc_d = 8
+# breakfast dialogue total = 815
+breakfast_totald = (brian_d + andrew_d + claire_d + allison_d + bender_d + vernon_d + carl_d + misc_d)
+
+plt.figure(8)
+plt.title('Breakfast Club: Dialogue Breakdown',  fontweight='bold')
+y = np.array([brian_d, andrew_d, claire_d, allison_d, bender_d, vernon_d, carl_d, misc_d])
+charlabels = ["Brian", "Andrew", "Claire", "Allison", "Bender", "Vernon", "Carl", "Misc."]
+d_labels = ["121 Lines", "140 Lines", "154 Lines", "71 Lines", "213 Lines", "87 Lines", "21 Lines", "8 Lines"]
+plt.pie(y, labels = d_labels, colors=colors1+colors2+colors3+colors4, wedgeprops={'edgecolor': 'black', 'linewidth': 1.5})
+plt.legend(charlabels, title="Characters", bbox_to_anchor=(1.2, 0.6))
 
 plt.show()
