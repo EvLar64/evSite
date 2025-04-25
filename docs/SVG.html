@@ -7,7 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
            <style>
             html {
-                height: 400%;
+  
                 margin: 0; 
                 padding: 0; 
             }
@@ -20,6 +20,12 @@
                 max-width:auto;
                 margin: 0 20px;
             }
+            figure.svg {width:80%; 
+            background:silver;
+            margin:auto;
+            }
+            
+         
           </style>
     </head>
     <body style="font-family: tahoma">
@@ -32,9 +38,12 @@
                 <a href="SVG.html">SVG</a></span>
         </nav>
         <h2>Example SVG Displays</h2>
-        
-        <embed style="width: 200%;" src="images/ferris_4thWall.svg"/>
-        <embed style="width: 200%;" src="images/islandAreas.svg"/>
+       <figure class="svg"> 
+        <embed src="images/ferris_4thWall.svg"/>
+       </figure>
+       <figure class="svg">
+           <img src="images/islandAreas.svg"/>
+       </figure>
         
     </body>
 </html>
