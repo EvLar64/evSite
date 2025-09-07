@@ -1,1 +1,1 @@
-Evan's Git README
+EL's Git Repository - DIGIT 400 Edition
