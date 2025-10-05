@@ -3,9 +3,18 @@
 window.addEventListener('DOMContentLoaded', init, false);
 
 function init() {
-  /*   if (window.location.pathname.endsWith('index.html')) {
-    alert('Welcome to evSite 400 - Revitalized with JavaScript Capabilities!');
-  }  */
+
+document.getElementById('spinButton').onclick = function() {
+  var obj = document.getElementById('spinner_object');
+  var svg = obj.contentDocument;
+
+  if (svg) {
+    alert('SVG is loaded and accessible.');
+  } else {
+    alert('SVG not loaded or blocked.');
+  }
+};
+
 
   const links = document.querySelectorAll(".nav-link");
   links.forEach(link => {
@@ -216,6 +225,6 @@ if (rollButton2) {
       alert(message);
     }, 100);
   });
-}
+  }
 
-}
+  }

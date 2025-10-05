@@ -10,19 +10,14 @@
                 background: #FFD8A8;
                 padding: 1.1em;
             }
-            .img2 {
-                max-height:auto;
-                max-width:auto;
-                margin: 0 20px;
-            }
-            figure.svg {
-                width:80%; 
-            background:silver;
-            margin:auto;
+            figure.svgspinner{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 1em 1em 1em -1.1em;
             }
             
           </style>
-        <script type="text/javascript" src="firstJava_EL.js">/**/</script>
     </head>
     <body style="font-family: tahoma">
         <h1 style="font-family:monaco">SVG</h1>
@@ -34,6 +29,11 @@
                 <a href="SVG.html" class="nav-link" style="margin: 0 2em;">SVG</a></span>
         </nav>
         <h2 style="font-family:monaco">Example SVG Displays</h2>
+        <figure class="svgspinner"> 
+            <object id="spinner_object" data="images/JS_SVG_EL_01.svg" type="image/svg+xml" width="500" height="500"></object>
+            <button id="spinButton">Click here!</button>
+        </figure>
+        <script type="text/javascript" src="firstJava_EL.js">/**/</script>
        <figure class="svg"> 
         <embed src="images/ferris_4thWall.svg" alt="SVG display of Ferris bueller's dialogue spoken to the camera vs. the rest"/>
        </figure>
@@ -41,7 +41,7 @@
            <embed src="images/islandAreas.svg" alt="animated SVG bar graph showing the different populations of islands"/>
        </figure>
        <figure class="svg">
-           <embed src="images/Larson_0114_svg01.svg" alt="the letter E written out in circles in SVG"/>
+           <embed src="images/Larson_0114_svg01.svg" height="500" alt="the letter E written out in circles in SVG"/>
        </figure>
     </body>
 </html>
