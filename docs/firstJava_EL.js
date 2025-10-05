@@ -4,44 +4,12 @@ window.addEventListener('DOMContentLoaded', init, false);
 
 function init() {
 
-function getRandomColor() {
-  var letters = '0123456789ABCDEF';
-  var color = '#';
-  for (var i = 0; i < 6; i++) {
-    color += letters[Math.floor(Math.random() * 16)];
-  }
-  return color;
-}
-
-function randomizeSvgColors() {
-  var obj = document.getElementById('spinner_object');
-  var svgDoc = obj.contentDocument;
-
-  if (!svgDoc) {
-    alert('SVG not loaded or accessible.');
-    return;
-  }
-
-  var tags = ['circle', 'polygon', 'line'];
-
-  for (var i = 0; i < tags.length; i++) {
-    var elements = svgDoc.getElementsByTagName(tags[i]);
-
-    for (var j = 0; j < elements.length; j++) {
-      var el = elements[j];
-
-      if (tags[i] === 'line') {
-        el.setAttribute('stroke', getRandomColor());
-      } else {
-        el.setAttribute('fill', getRandomColor());
-      }
-    }
-  }
-}
-
-document.getElementById('randomizeButton').onclick = randomizeSvgColors;
-
-
+  document.getElementById('spinButton').addEventListener('click', function() {
+    const svgObject = document.getElementById('spinner_object');
+    const svg = svgObject.contentDocument.getElementById('spinner_js');
+    svg.style.transition = 'transform 3s ease';
+    svg.style.transform = 'rotate(720deg);
+  });
 
   const links = document.querySelectorAll(".nav-link");
   links.forEach(link => {
