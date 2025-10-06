@@ -60,9 +60,8 @@ function init() {
         window.location.href = "https://youtu.be/od_PmtmMDV0?si=OM-3iKSDAaxlP0bH";
       }, 1000);
     });
-  }
 
-  const style = document.createElement('style');
+    const style = document.createElement('style');
   style.textContent = `
     .yellowGlow {
       box-shadow: 0 0 15px 5px yellow;
@@ -221,5 +220,5 @@ if (rollButton2) {
     svg.style.transition = 'transform 3s ease';
     svg.style.transform = 'rotate(720deg);
   });
-
+  }
   }
