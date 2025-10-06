@@ -218,7 +218,7 @@ if (rollButton2) {
     const svgObject = document.getElementById('spinner_object');
     const svg = svgObject.contentDocument.getElementById('spinner_js');
     svg.style.transition = 'transform 3s ease';
-    svg.style.transform = 'rotate(720deg);
+    svg.style.transform = 'rotate(720deg)';
   });
   }
   }
