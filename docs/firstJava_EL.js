@@ -214,11 +214,16 @@ if (rollButton2) {
     }, 100);
   });
   }
-
-  document.getElementById('spinButton').addEventListener('click', function() {
-    const svgObject = document.getElementById('spinner_object');
-    const svg = svgObject.contentDocument.getElementById('spinner_js');
-    svg.style.transition = 'transform 3s ease';
-    svg.style.transform = 'rotate(720deg)';
+  
+const spinButton = document.getElementById('spinButton');
+  if(spinButton){
+    spinButton.addEventListener('click', function() {
+      const spinObject = document.getElementById('spinner_object');
+      if(!spinObject || !spinObject.contentDocument) return;
+      const spinner = spinObject.contentDocument.getElementById('spinner_js');
+      if(!spinner) return;
+      spinner.style.transition = 'transform 3s ease';
+      spinner.style.transform = 'rotate(720deg)';
   });
   }
+}
