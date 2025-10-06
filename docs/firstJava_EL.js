@@ -4,13 +4,6 @@ window.addEventListener('DOMContentLoaded', init, false);
 
 function init() {
 
-  document.getElementById('spinButton').addEventListener('click', function() {
-    const svgObject = document.getElementById('spinner_object');
-    const svg = svgObject.contentDocument.getElementById('spinner_js');
-    svg.style.transition = 'transform 3s ease';
-    svg.style.transform = 'rotate(720deg);
-  });
-
   const links = document.querySelectorAll(".nav-link");
   links.forEach(link => {
     link.style.padding = "10px 5px";
@@ -221,5 +214,12 @@ if (rollButton2) {
     }, 100);
   });
   }
+
+  document.getElementById('spinButton').addEventListener('click', function() {
+    const svgObject = document.getElementById('spinner_object');
+    const svg = svgObject.contentDocument.getElementById('spinner_js');
+    svg.style.transition = 'transform 3s ease';
+    svg.style.transform = 'rotate(720deg);
+  });
 
   }
