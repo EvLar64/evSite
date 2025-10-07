@@ -10,29 +10,175 @@
             >
             <desc>Animated JavaScript SVG - EL</desc>
             
+            <style type="text/css">
+                polygon.triangle:hover {
+                fill: gold;
+                }
+                
+                polygon:hover {
+                fill: cyan;
+                }
+                line.bline:hover {
+                filter: drop-shadow(0px 3px 6px firebrick);
+                }
+                
+                
+                line.move:hover {
+                stroke: pink;
+                }
+                .small {
+                transform-origin: 100px 100px;
+                transition: transform 3s ease;
+                }
+                .small:hover {
+                transform: scale(1.5);
+                }
+            </style>
+            
+            
             <circle cx="100" cy="100" r="85" fill="lightgreen" stroke="none" opacity="0.65" />
             
             <g id="spinner-shapes">
-                <line x1="100" y1="10" x2="100" y2="190" stroke="#B8860B" stroke-width="2" transform="rotate(30 100 100)"/>
-                <line x1="100" y1="10" x2="100" y2="190" stroke="#B8860B" stroke-width="2" transform="rotate(90 100 100)"/>
-                <line x1="100" y1="10" x2="100" y2="190" stroke="#B8860B" stroke-width="2" transform="rotate(150 100 100)"/>
-                <line x1="100" y1="10" x2="100" y2="190" stroke="#B8860B" stroke-width="2" transform="rotate(210 100 100)"/>
-                <line x1="100" y1="10" x2="100" y2="190" stroke="#B8860B" stroke-width="2" transform="rotate(270 100 100)"/>
-                <line x1="100" y1="10" x2="100" y2="190" stroke="#B8860B" stroke-width="2" transform="rotate(330 100 100)"/>
+                <g transform="rotate(30 100 100)"><line class="brline" x1="100" y1="10" x2="100" y2="190" stroke="#B8860B" stroke-width="2">
+                </line></g>
+
+                <g transform="rotate(90 100 100)"><line class="brline" x1="100" y1="10" x2="100" y2="190" stroke="#B8860B" stroke-width="2">
+                </line></g>
+                <line class="bline" x1="100" y1="10" x2="100" y2="190" stroke="#B8860B" stroke-width="2" transform="rotate(150 100 100)"/>
+                <line class="bline" x1="100" y1="10" x2="100" y2="190" stroke="#B8860B" stroke-width="2" transform="rotate(210 100 100)"/>
+                <line class="bline" x1="100" y1="10" x2="100" y2="190" stroke="#B8860B" stroke-width="2" transform="rotate(270 100 100)"/>
+                <line class="bline" x1="100" y1="10" x2="100" y2="190" stroke="#B8860B" stroke-width="2" transform="rotate(330 100 100)"/>
                 
-                <polygon class="triangle" points="100,10 120,80 80,80" fill="red" />
-                <polygon class="triangle" points="100,10 120,80 80,80" fill="blue" transform="rotate(60, 100, 100)" />
-                <polygon class="triangle" points="100,10 120,80 80,80" fill="green" transform="rotate(120, 100, 100)" />
-                <polygon class="triangle" points="100,10 120,80 80,80" fill="yellow" transform="rotate(180, 100, 100)" />
-                <polygon class="triangle" points="100,10 120,80 80,80" fill="orange" transform="rotate(240, 100, 100)" />
-                <polygon class="triangle" points="100,10 120,80 80,80" fill="purple" transform="rotate(300, 100, 100)" />
+                <polygon class="triangle" points="100,10 120,80 80,80" fill="red" >
+                    <animateTransform
+                        attributeName="transform"
+                        type="translate"
+                        values="0 0; 0 25; 0 0"
+                        dur="4s"
+                        repeatCount="indefinite"
+                        begin = "0s"/>
+                </polygon>
+                <g transform="rotate(60, 100, 100)"><polygon class="triangle" points="100,10 120,80 80,80" fill="blue">
+                    <animateTransform
+                        attributeName="transform"
+                        type="translate"
+                        values="0 0; 0 25; 0 0"
+                        dur="4s"
+                        repeatCount="indefinite"
+                        begin = "0.25s"/>
+                </polygon></g>
+                <g transform="rotate(120, 100, 100)"><polygon class="triangle" points="100,10 120,80 80,80" fill="green">
+                    <animateTransform
+                        attributeName="transform"
+                        type="translate"
+                        values="0 0; 0 25; 0 0"
+                        dur="4s"
+                        repeatCount="indefinite"
+                        begin = "0.5s"/>
+                </polygon></g>
+                <g transform="rotate(180, 100, 100)">
+                    <polygon class="triangle" points="100,10 120,80 80,80" fill="yellow">
+                    <animateTransform
+                        attributeName="transform"
+                        type="translate"
+                        values="0 0; 0 25; 0 0"
+                        dur="4s"
+                        repeatCount="indefinite"
+                        begin = "0.75s"/>
+                </polygon>
+                </g>
+                <g transform="rotate(240, 100, 100)"><polygon class="triangle" points="100,10 120,80 80,80" fill="orange">
+                    <animateTransform
+                        attributeName="transform"
+                        type="translate"
+                        values="0 0; 0 25; 0 0"
+                        dur="4s"
+                        repeatCount="indefinite"
+                        begin = "1s"/>
+                </polygon>
+                </g>
+                <g transform="rotate(300, 100, 100)"><polygon class="triangle" points="100,10 120,80 80,80" fill="purple">
+                    <animateTransform
+                        attributeName="transform"
+                        type="translate"
+                        values="0 0; 0 25; 0 0"
+                        dur="4s"
+                        repeatCount="indefinite"
+                        begin = "1.25s"/>
+                </polygon></g>
                 
-                <line x1="100" y1="10" x2="100" y2="190" stroke="#FF6F61" stroke-width="2"/>
-                <line x1="100" y1="10" x2="100" y2="190" stroke="#FF6F61" stroke-width="2" transform="rotate(60 100 100)"/>
-                <line x1="100" y1="10" x2="100" y2="190" stroke="#FF6F61" stroke-width="2" transform="rotate(120 100 100)"/>
-                <line x1="100" y1="10" x2="100" y2="190" stroke="#FF6F61" stroke-width="2" transform="rotate(180 100 100)"/>
-                <line x1="100" y1="10" x2="100" y2="190" stroke="#FF6F61" stroke-width="2" transform="rotate(240 100 100)"/>
-                <line x1="100" y1="10" x2="100" y2="190" stroke="#FF6F61" stroke-width="2" transform="rotate(300 100 100)"/>
+                <line class="move" x1="100" y1="10" x2="100" y2="190" stroke="#FF6F61" stroke-width="2">
+                    <animateTransform
+                        attributeName="transform"
+                        type="rotate"
+                        dur="10s"
+                        repeatCount="indefinite"
+                        values="
+                        0 100 100;
+                        360 100 100;
+                        360 100 100"
+                        keyTimes="0; 0.5; 1"/>
+                </line>
+                <line class="move" x1="100" y1="10" x2="100" y2="190" stroke="#FF6F61" stroke-width="2" transform="rotate(60 100 100)">
+                    <animateTransform
+                        attributeName="transform"
+                        type="rotate"
+                        dur="10s"
+                        repeatCount="indefinite"
+                        values="
+                        0 100 100;
+                        360 100 100;
+                        360 100 100"
+                        keyTimes="0; 0.5; 1"/>
+                </line>
+                <line class="move" x1="100" y1="10" x2="100" y2="190" stroke="#FF6F61" stroke-width="2" transform="rotate(120 100 100)">
+                    <animateTransform
+                        attributeName="transform"
+                        type="rotate"
+                        dur="10s"
+                        repeatCount="indefinite"
+                        values="
+                        0 100 100;
+                        360 100 100;
+                        360 100 100"
+                        keyTimes="0; 0.5; 1"/>
+                </line>
+                <line class="move" x1="100" y1="10" x2="100" y2="190" stroke="#FF6F61" stroke-width="2" transform="rotate(180 100 100)">
+                    <animateTransform
+                        attributeName="transform"
+                        type="rotate"
+                        dur="10s"
+                        repeatCount="indefinite"
+                        values="
+                        0 100 100;
+                        360 100 100;
+                        360 100 100"
+                        keyTimes="0; 0.5; 1"/>
+                </line>
+                <line class="move" x1="100" y1="10" x2="100" y2="190" stroke="#FF6F61" stroke-width="2" transform="rotate(240 100 100)">
+                    <animateTransform
+                        attributeName="transform"
+                        type="rotate"
+                        dur="10s"
+                        repeatCount="indefinite"
+                        values="
+                        0 100 100;
+                        360 100 100;
+                        360 100 100"
+                        keyTimes="0; 0.5; 1"/>
+                </line>
+                <line class="move" x1="100" y1="10" x2="100" y2="190" stroke="#FF6F61" stroke-width="2" transform="rotate(300 100 100)">
+                    <animateTransform
+                        attributeName="transform"
+                        type="rotate"
+                        dur="10s"
+                        repeatCount="indefinite"
+                        values="
+                        0 100 100;
+                        360 100 100;
+                        360 100 100"
+                        keyTimes="0; 0.5; 1"/>
+                </line>
                 
                 <circle cx="100" cy="100" r="90" fill="none" stroke="purple" stroke-width="10" opacity="1" />
                 <polygon
@@ -40,15 +186,34 @@
                     fill="pink"
                     stroke="cyan"
                     stroke-width="5"
-                />
+                >
+                    <animateTransform
+                        attributeName="transform"
+                        type="rotate"
+                        from="0 100 100"
+                        to="-360 100 100"
+                        dur="10s"
+                        repeatCount="indefinite"/>
+                </polygon>
                 <polygon
                     points="110,80 125,100 110,120 90,120 75,100 90,80"
                     fill="beige"
                     stroke="orange"
                     stroke-width="5"
-                />
-                <circle cx="100" cy="100" r="5" fill="none" stroke="maroon" stroke-width="10" opacity="1"/>
-                <circle cx="100" cy="100" r="1" fill="none" stroke="white" stroke-width="10" opacity="1"/>
+                >
+                    <animateTransform
+                        attributeName="transform"
+                        type="rotate"
+                        from="0 100 100"
+                        to="360 100 100"
+                        dur="10s"
+                        repeatCount="indefinite"/>
+                </polygon>
+                <circle class="small" cx="100" cy="100" r="5" fill="none" stroke="maroon" stroke-width="10" opacity="1"/>
+                <circle class="small" cx="100" cy="100" r="1" fill="none" stroke="white" stroke-width="10" opacity="1"/>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="300" height="300">
+                </svg>
+                
             </g>
         </svg>
 
