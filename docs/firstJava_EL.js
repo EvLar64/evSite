@@ -228,4 +228,3 @@ const spinObject = document.getElementById('spinner_object');
       }
     });
   }
-  }
