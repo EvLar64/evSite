@@ -215,7 +215,7 @@ if (rollButton2) {
   });
   }
   
-const spinObject = document.getElementById('spinner_object');
+/* const spinObject = document.getElementById('spinner_object');
   if(spinObject){
     spinObject.addEventListener('load', () => {
       const spin = spinObject.contentDocument.getElementById('spinner_js');
@@ -228,3 +228,5 @@ const spinObject = document.getElementById('spinner_object');
       }
     });
   }
+} */ 
+}
