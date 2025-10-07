@@ -213,20 +213,4 @@ if (rollButton2) {
       alert(message);
     }, 100);
   });
-  }
-  
-/* const spinObject = document.getElementById('spinner_object');
-  if(spinObject){
-    spinObject.addEventListener('load', () => {
-      const spin = spinObject.contentDocument.getElementById('spinner_js');
-      const spinButton = document.getElementById('spinButton');
-      if (spinButton && spin) {
-        spinButton.addEventListener('click', () => {
-          spin.style.transition = 'transform 3s ease';
-          spin.style.transform = 'rotate(720deg)';
-        });
-      }
-    });
-  }
-} */ 
 }
