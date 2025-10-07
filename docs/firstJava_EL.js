@@ -213,3 +213,5 @@ if (rollButton2) {
       alert(message);
     }, 100);
   });
+}
+}
