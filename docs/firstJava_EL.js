@@ -33,6 +33,7 @@ function init() {
 
       document.getElementById('correctSound').currentTime = 0;
       document.getElementById('correctSound').play();
+      
       const answer2 = prompt("What is the capital of Pennsylvania?");
       if (!answer2 || answer2.trim().toLowerCase() !== 'harrisburg') {
       document.getElementById('incorrectSound').currentTime = 0;
@@ -43,6 +44,7 @@ function init() {
       
       document.getElementById('correctSound').currentTime = 0;
       document.getElementById('correctSound').play();
+      
       const answer3 = prompt("How do caterpillars turn into butterflies?");
       if (!answer3 || answer3.trim().toLowerCase() !== 'metamorphosis') {
       document.getElementById('incorrectSound').currentTime = 0;
@@ -55,14 +57,13 @@ function init() {
       document.getElementById('correctSound').play();
       alert("You got them all right! Enjoy.");
       
-      
       setTimeout(() => {
         window.location.href = "https://youtu.be/od_PmtmMDV0?si=OM-3iKSDAaxlP0bH";
       }, 1000);
     });
   }
 
-    const style = document.createElement('style');
+  const style = document.createElement('style');
   style.textContent = `
     .yellowGlow {
       box-shadow: 0 0 15px 5px yellow;
@@ -81,7 +82,7 @@ function init() {
     });
   });
 
-     const paragraphs = document.querySelectorAll('p');
+const paragraphs = document.querySelectorAll('p');
 paragraphs.forEach(p => {
   p.style.opacity = '0';
   p.style.transition = 'opacity 2s ease';
@@ -132,7 +133,8 @@ const diceImage12 = rollButton12.querySelector('img[src="images/1d12.png"]');
       alert(message);
     }, 1000);
   });
-}const rollButton10 = document.getElementById('d10'); 
+}
+const rollButton10 = document.getElementById('d10'); 
 if (rollButton10) {
 const diceImage10 = rollButton10.querySelector('img[src="images/1d10.png"]');
   let angle = 0; 
@@ -148,7 +150,8 @@ const diceImage10 = rollButton10.querySelector('img[src="images/1d10.png"]');
       alert(message);
     }, 1000);
   });
-}const rollButton8 = document.getElementById('d8'); 
+}
+const rollButton8 = document.getElementById('d8'); 
 if (rollButton8) {
 const diceImage8 = rollButton8.querySelector('img[src="images/1d8.png"]');
   let angle = 0; 
@@ -164,7 +167,8 @@ const diceImage8 = rollButton8.querySelector('img[src="images/1d8.png"]');
       alert(message);
     }, 1000);
   });
-}const rollButton6 = document.getElementById('d6'); 
+}
+const rollButton6 = document.getElementById('d6'); 
 if (rollButton6) {
 const diceImage6 = rollButton6.querySelector('img[src="images/1d6.png"]');
   let angle = 0; 
@@ -180,7 +184,8 @@ const diceImage6 = rollButton6.querySelector('img[src="images/1d6.png"]');
       alert(message);
     }, 1000);
   });
-}const rollButton4 = document.getElementById('d4'); 
+}
+const rollButton4 = document.getElementById('d4'); 
 if (rollButton4) {
 const diceImage4 = rollButton4.querySelector('img[src="images/1d4.png"]');
   let angle = 0; 
@@ -196,7 +201,8 @@ const diceImage4 = rollButton4.querySelector('img[src="images/1d4.png"]');
       alert(message);
     }, 1000);
   });
-}const rollButton2 = document.getElementById('d2'); 
+}
+const rollButton2 = document.getElementById('d2'); 
 if (rollButton2) {
    const diceImage2 = rollButton2.querySelector('img[src="images/1d2.png"]');
   rollButton2.addEventListener('click', () => {
