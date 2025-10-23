@@ -11,15 +11,15 @@
                 padding: 1.1em;
             }
           </style>
+        <link rel="stylesheet" href="style.css">
         <script type="text/javascript" src="firstJava_EL.js">/**/</script>
         
     </head>
-    <body style="font-family: tahoma">
-        
+    <body style="font-family: tahoma,sans-serif">
         
         <h1 style="font-family:monaco">Virtual Production</h1>
         <nav>
-            <span style="background-color: #F3FB36 ; padding: 0.65em 0"><a href="index.html" class="nav-link" style="margin: 0 2em;">Home</a> 
+            <span style="background-color: #F3FB36 ; box-shadow: 5px 5px 10px rgba(0,0,0,0.3); border-radius: 15px; padding: 0.65em 0"><a href="index.html" class="nav-link" style="margin: 0 2em;">Home</a>
                 <a href="about.html" class="nav-link" style="margin: 0 2em;">Resumé</a>
                 <a href="gallery.html" class="nav-link" style="margin: 0 2em;">Gallery</a>
                 <a href="comp.html" class="nav-link" style="margin: 0 2em;">HTML vs. WordPress</a>
@@ -27,28 +27,50 @@
                 <a href="techIssue.html" class="nav-link" style="margin: 0 2em;">Virtual Production</a></span>
         </nav>
         <h2 style="font-family:monaco">in-progress state of Digital Media/Tech Issue page (<a href="https://www.zotero.org/groups/6200603/d4_el_virtualproduction/library">Zotero Library Link</a>)</h2>
-        <p style="background-color: #1A1A1A; color: #FFFFFF; padding: 1.2em">Digital Media/Tech Issue - Virtual Production</p>
-        
+
+        <svg
+                class="filmreel"
+                width="200"
+                height="200"
+                viewBox="0 0 200 200"
+                style="background:#222; box-shadow: 5px 5px 10px rgba(0,0,0,0.3); border-radius:20px;">
+            <g style="transform-origin: 100px 100px; animation: spin 10s linear infinite;">
+                <circle cx="100" cy="100" r="90" fill="#444" stroke="#222" stroke-width="8"/>
+                <circle cx="100" cy="100" r="50" fill="#666" stroke="#333" stroke-width="6"/>
+
+                <circle cx="100" cy="42" r="25" fill="#222"/>
+                <circle cx="150" cy="70" r="25" fill="#222"/>
+                <circle cx="150" cy="130" r="25" fill="#222"/>
+                <circle cx="100" cy="158" r="25" fill="#222"/>
+                <circle cx="50" cy="130" r="25" fill="#222"/>
+                <circle cx="50" cy="70" r="25" fill="#222"/>
+            </g>
+        </svg>
+
+        <p style="background-color: #1A1A1A; color: #FFFFFF; box-shadow: 5px 5px 10px rgba(0,0,0,0.3); border-radius: 15px; padding: 1.2em; font-family: Franklin Gothic Medium, Arial, sans-serif;">Digital Media/Tech Issue - Virtual Production</p>
+
         <figure style="text-align: center;">
-            <img src="images/VP_01.jpg" alt="image of rear-screen projection in old film" style="border: 10px double #F5A623; width: 33%; display: block; margin: 0 auto;"></img>
-            <figcaption>Rear-Screen Projection</figcaption>
+            <img src="images/VP_01.jpg" alt="image of rear-screen projection in old film" style="border: 10px double #F5A623; width: 33%; display: block; margin: 0 auto;"/>
+            <figcaption class="figs">Rear-Screen Projection</figcaption>
         </figure>
         
-        <p style="text-align: center; padding: 1em; background-color:#3A6D7E; color: #F5DEB3"><strong><u>WHAT IS VIRTUAL PRODUCTION?</u></strong></p>
-            <ul style="background-color: #1A1A1A; color: #FFFFFF; padding: 1.2em">
+        <section style="box-shadow: 5px 5px 10px rgba(0,0,0,0.3); border-radius: 15px;" class="sec1">
+        <p class="clapper" style="text-align: center; padding: 1em;"><span><strong><u>WHAT IS VIRTUAL PRODUCTION?</u></strong></span></p>
+            <ul style="background-color: #1A1A1A; color: #FFFFFF; padding: 1.2em; border-radius: 10px; font-family: Franklin Gothic Medium, Arial, sans-serif;">
                 <li>Definition of Virtual Production</li>
                 <li>History (different technologies, rough timeline of evolution)</li>
                 <li>Current usages and examples (including data/sources)</li>
             </ul>
+        </section>
             
         
         <figure style="text-align: center;">
-            <img src="images/VP_02.jpeg" alt="image of matte painter for Star Wars" style="border: 10px double #F5A623; width: 33%; display: block; margin: 0 auto;"></img>
-            <figcaption>Matte Painting</figcaption>
+            <img src="images/VP_02.jpeg" alt="image of matte painter for Star Wars" style="border: 10px double #F5A623; width: 33%; display: block; margin: 0 auto;"/>
+            <figcaption class="figs">Matte Painting</figcaption>
         </figure>
         
-        <p style="text-align: center; padding: 1em; background-color:#3A6D7E; color: #F5DEB3"><strong><u>PROS OF VIRTUAL PRODUCTION</u></strong> <a href="#top">^</a></p>
-        <ul style="background-color: #1A1A1A; color: #FFFFFF; padding: 1.2em">
+        <section style="box-shadow: 5px 5px 10px rgba(0,0,0,0.3); border-radius: 15px;" class="sec2"><p class="clapper" style="text-align: center; padding: 1em;"><span><strong><u>PROS OF VIRTUAL PRODUCTION</u></strong> <a href="#top">^</a></span></p>
+        <ul style="background-color: #1A1A1A; color: #FFFFFF; padding: 1.2em; border-radius: 10px; font-family: Franklin Gothic Medium, Arial, sans-serif;">
             <li>More environmentally sustainable than other forms of production</li>
             <li>Consistently-advancing technology/realism</li>
             <li>LED Volume: Gives an actor more to respond to than green/blue screen or performance capture (in most cases)</li>
@@ -58,27 +80,30 @@
             <li>Other positive applications outside of film</li>
             <li>Data/sources (visual of how LED Volumes work?)</li>
         </ul>
+        </section>
         
         <figure style="text-align: center;">
-            <img src="images/VP_03.jpg" alt="image of blue/green screen use in film" style="border: 10px double #F5A623; width: 33%; display: block; margin: 0 auto;"></img>
-            <figcaption>Green/Blue Screen Compositing</figcaption>
+            <img src="images/VP_03.jpg" alt="image of blue/green screen use in film" style="border: 10px double #F5A623; width: 33%; display: block; margin: 0 auto;"/>
+            <figcaption class="figs">Green/Blue Screen Compositing</figcaption>
         </figure>
         
-        <p style="text-align: center; padding: 1em; background-color:#3A6D7E; color: #F5DEB3"><strong><u>CONS OF VIRTUAL PRODUCTION</u></strong> <a href="#top">^</a></p>
-        <ul style="background-color: #1A1A1A; color: #FFFFFF; padding: 1.2em">
+        <section style="box-shadow: 5px 5px 10px rgba(0,0,0,0.3); border-radius: 15px;" class="sec3"><p class="clapper" style="text-align: center; padding: 1em;"><span><strong><u>CONS OF VIRTUAL PRODUCTION</u></strong> <a href="#top">^</a></span></p>
+        <ul style="background-color: #1A1A1A; color: #FFFFFF; padding: 1.2em; border-radius: 10px; font-family: Franklin Gothic Medium, Arial, sans-serif;">
             <li>More reliance on Unreal Engine (and other game technologies) is required, and has created a gap between VFX education and current VFX knowledge requirements</li>
             <li>Sky/floor camera movement limitations, perception disadvantages, space limitations</li>
             <li>Rendering/capturing/dressing big LED displays requires a lot of time, money, resources, and testing</li>
             <li>A lot of Virtual Production work nowadays means that post-production comes first, in terms of finalizing the look of a rendered scene <i>before</i> shooting rather than <i>after</i> (earlier digital practices)</li>
             <li>Data/sources</li>
         </ul>
+        </section>
         
         <figure style="text-align: center;">
-            <img src="images/VP_04.jpg" alt="image of performance capture in Avatar" style="border: 10px double #F5A623; width: 33%; display: block; margin: 0 auto;"></img>
-            <figcaption>Performance Capture</figcaption>
+            <img src="images/VP_04.jpg" alt="image of performance capture in Avatar" style="border: 10px double #F5A623; width: 33%; display: block; margin: 0 auto;"/>
+            <figcaption class="figs">Performance Capture</figcaption>
         </figure>
-        <p style="text-align: center; padding: 1em; background-color:#3A6D7E; color: #F5DEB3"><strong><u>IMPACTS AND OVERVIEW</u></strong> <a href="#top">^</a></p>
-        <ul style="background-color: #1A1A1A; color: #FFFFFF; padding: 1.2em">
+
+        <section style="box-shadow: 5px 5px 10px rgba(0,0,0,0.3); border-radius: 15px;" class="sec4"><p class="clapper" style="text-align: center; padding: 1em;"><span><strong><u>IMPACTS AND OVERVIEW</u></strong> <a href="#top">^</a></span></p>
+        <ul style="background-color: #1A1A1A; color: #FFFFFF; padding: 1.2em; border-radius: 10px; font-family: Franklin Gothic Medium, Arial, sans-serif;">
             <li>Current status and possible future evolutions</li>
             <li>Benefits/applications outside of film</li>
             <li>Improving pipelines and workflows</li>
@@ -86,23 +111,23 @@
             <li>Still some R&amp;D required, but inevitable</li>
             <li>Discussion of infamous question in relation to virtual production: what makes a film real, or real enough? Does it need to be, etc.?</li>
             <li>Data/sources</li>
-            
         </ul>
+        </section>
         
         <figure style="text-align: center;">
-            <img src="images/VP_05.jpg" alt="image of LED Volume Tech used in movies" style="border: 10px double #F5A623; width: 33%; display: block; margin: 0 auto;"></img>
-            <figcaption>LED <strong>Volume</strong> Technology</figcaption>
+            <img src="images/VP_05.jpg" alt="image of LED Volume Tech used in movies" style="border: 10px double #F5A623; width: 33%; display: block; margin: 0 auto;"/>
+            <figcaption class="figs">LED <strong>Volume</strong> Technology</figcaption>
         </figure>
 
-        <h5 style="font-family:monaco">Image Sources:
-        <ul>
-            <li>Frame From “<i>To Catch A Thief</i>” (1955), <i>dir. Alfred Hitchcock</i>, <i>Paramount Pictures</i></li>
-            <li>Photo of Frank Ordaz, Matte Painting for “<i>Return of the Jedi</i>” (1983), <i>dir. Richard Marquand</i>, <i>Lucasfilm/Industrial Light & Magic</i>
-</li>
-            <li>Photo of Ewan McGregor, Set of “<i>Star Wars Episode III: Revenge of the Sith</i>” (2005), <i>dir. George Lucas</i>, <i>Lucasfilm/Industrial Light & Magic</i></li>
-            <li>Photo of Zoe Saldana, Performance Capture for "<i>Avatar</i>" (2009), <i>dir. James Cameron</i>, <i>Weta FX</i></li>
-            <li>Photo of LED Volume Production for "<i>Star Trek: Strange New Worlds</i>" (2022), <i>dir. Akiva Goldsman</i>, <i>Autodesk</i></li>
-        </ul>
-        </h5>
+        <div style="background-color: #1A1A1A; color: #FFFFFF; box-shadow: 5px 5px 10px rgba(0,0,0,0.3); border-radius: 15px; padding: 1.2em; border-radius: 10px; font-family: 'Franklin Gothic Medium', Arial, sans-serif; font-size: 0.75em;">
+            <u>Images Sources</u>:
+            <ul>
+                <li>Frame From “<i>To Catch A Thief</i>” (1955), <i>dir. Alfred Hitchcock</i>, <i>Paramount Pictures</i></li>
+                <li>Photo of Frank Ordaz, Matte Painting for “<i>Return of the Jedi</i>” (1983), <i>dir. Richard Marquand</i>, <i>Lucasfilm/Industrial Light & Magic</i></li>
+                <li>Photo of Ewan McGregor, Set of “<i>Star Wars Episode III: Revenge of the Sith</i>” (2005), <i>dir. George Lucas</i>, <i>Lucasfilm/Industrial Light & Magic</i></li>
+                <li>Photo of Zoe Saldana, Performance Capture for "<i>Avatar</i>" (2009), <i>dir. James Cameron</i>, <i>Weta FX</i></li>
+                <li>Photo of LED Volume Production for "<i>Star Trek: Strange New Worlds</i>" (2022), <i>dir. Akiva Goldsman</i>, <i>Autodesk</i></li>
+            </ul>
+        </div>
     </body>
 </html>
