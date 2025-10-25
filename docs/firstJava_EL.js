@@ -91,7 +91,29 @@ setTimeout(() => {
   paragraphs.forEach(p => {
     p.style.opacity = '1';
   });
-}, 200); 
+}, 200);
+
+    const divs = document.querySelectorAll('div');
+    divs.forEach(div => {
+        div.style.opacity = '0';
+        div.style.transition = 'opacity 2s ease';
+    });
+    setTimeout(() => {
+        divs.forEach(div => {
+            div.style.opacity = '1';
+        });
+    }, 200);
+
+    const secs = document.querySelectorAll('section');
+    secs.forEach(section => {
+        section.style.opacity = '0';
+        section.style.transition = 'opacity 2s ease';
+    });
+    setTimeout(() => {
+        secs.forEach(section => {
+            section.style.opacity = '1';
+        });
+    }, 200);
 
 
 function rollDice(sides) {

@@ -6,17 +6,21 @@
             background-color: #f0f0f0; 
             display: flex; 
             flex-direction: column; 
-            align-items: center; 
+            align-items: center;
+    font-family: 'Anta';
 }
 .project-label{
             font-size: 24px; 
             margin-bottom: 20px;
+    font-family: 'Anta';
 }
 .image-container{
             display: flex; 
             justify-content: center; 
             gap: 10px; 
-            flex-wrap: wrap;  }
+            flex-wrap: wrap;
+    font-family: 'Anta';
+}
 
 .misc-container {
             border: 2px solid #000; 
@@ -27,22 +31,31 @@
             display: flex; 
             flex-direction: column;
             align-items: center;
+    font-family: 'Anta';
 }
 .misc-label {
             font-size: 24px; 
             margin-bottom: 20px;
+    font-family: 'Anta';
 }
 .image-container{
             display: flex; 
             justify-content: center; 
             gap: 10px; 
             flex-wrap: wrap;
+    font-family: 'Anta';
 }
 img {
             height: auto;
             flex: 1; 
             max-width: 650px;
     box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
+}
+.no-shadow {
+    all: unset;
+    height: auto;
+    flex: 1;
+    max-width: 650px;
 }
 .art168-container{
             border: 2px solid #000; 
@@ -53,10 +66,12 @@ img {
             display: flex; 
             flex-direction: column;
             align-items: center;
+    font-family: 'Anta';
 }
 .art168-label {
             font-size: 24px; 
             margin-bottom: 20px;
+    font-family: 'Anta';
 }
 .comm270-container{
             border: 2px solid #000; 
@@ -67,10 +82,12 @@ img {
             display: flex; 
             flex-direction: column;
             align-items: center;
+    font-family: 'Anta';
 }
 .comm270-label{
     font-size: 24px;
     margin-bottom: 20px;
+    font-family: 'Anta';
 }
 .image-container{
     display: flex;
@@ -160,7 +177,7 @@ img {
     content: "";
     position: absolute;
     inset: 0;
-    background: rgba(255, 100, 200, 0.2);
+    background: linear-gradient(rgba(255, 100, 200, 0.05), rgba(255, 100, 200, 0.25), rgba(255, 100, 200, 0.05));
     animation: sweep 10s infinite ease-in-out;
 }
 
@@ -212,5 +229,46 @@ p.clapper:hover{
     display: block;
     margin: 0 auto;
 }
+
+.normalfont{
+    font-family: 'Anta';
+}
+
+h1 {
+    -webkit-text-stroke-width: 0.3px;
+    -webkit-text-stroke-color: #800020;
+    text-shadow: 2px 2px 4px #000000;
+
+}
+
+h2 {
+    -webkit-text-stroke-width: 0.2px;
+    -webkit-text-stroke-color: #800020;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+figure.svg {
+    filter: drop-shadow(4px 4px 5px rgba(0, 0, 0, 0.5));
+}
+
+figure.svgspinner {
+    filter: drop-shadow(4px 4px 5px rgba(0, 0, 0, 0.5));
+}
+
+html, body {
+    min-height: 100%;
+}
+
+.iframe-container {
+    display: flex;
+    justify-content: center;
+}
+
+iframe {
+    filter: drop-shadow(4px 4px 5px rgba(0, 0, 0, 0.5));
+}
+
+
+
 
 

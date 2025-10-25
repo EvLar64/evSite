@@ -2,31 +2,33 @@
 <?xml-stylesheet type="text/css" href="style.css"?>
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
-        <link type="text/css" href="style.css" rel="stylesheet" />
+        <link type="text/css" href="style.css" rel="stylesheet"/>
+        <link href='https://fonts.googleapis.com/css?family=Anta' rel='stylesheet'>
         <title>evSite</title>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <style>
             body {
-                background: #82fc6e;
+                background: linear-gradient(135deg, #82fc6e, #FC8294);
                 padding: 1.1em;
             }
           </style>
         <script type="text/javascript" src="firstJava_EL.js">/**/</script>
     </head>
     <body style="font-family: tahoma">
-        <h1 style="font-family:monaco">Gallery</h1>
-        <nav>
+        <h1 style="font-family:monaco; color: #FFD700">Gallery</h1>
+        <nav class="normalfont">
             <span style="background-color: #F3FB36 ; box-shadow: 5px 5px 10px rgba(0,0,0,0.3); border-radius: 15px; padding: 0.65em 0"><a href="index.html" class="nav-link" style="margin: 0 2em;">Home</a>
                 <a href="about.html" class="nav-link" style="margin: 0 2em;">Resumé</a>
                 <a href="gallery.html" class="nav-link" style="margin: 0 2em;">Gallery</a>
                 <a href="comp.html" class="nav-link" style="margin: 0 2em;">HTML vs. WordPress</a>
+                <a href="vanish.html" class="nav-link" style="margin: 0 2em;">"Vanish"</a>
                 <a href="SVG.html" class="nav-link" style="margin: 0 2em;">SVG</a>
                 <a href="techIssue.html" class="nav-link" style="margin: 0 2em;">Virtual Production</a>
                 <a href="whatsThis.html" class="nav-link" style="margin: 0 2em;">What's This?</a></span>
         </nav>
        
-        <h2 style="font-family:monaco">Click <strong><u><a href="https://github.com/EvLar64/evSite">here</a></u></strong> to visit the <strong>evSite GitHub repository</strong>!</h2>
+        <h2 style="font-family:monaco; color: #FFD700">Click <strong><u><a href="https://github.com/EvLar64/evSite">here</a></u></strong> to visit the <strong>evSite GitHub repository</strong>!</h2>
 
         <div style="box-shadow: 5px 5px 10px rgba(0,0,0,0.3); border-radius: 15px;" class="project-container">
             <div class="project-label">DIGIT Projects</div>
@@ -60,7 +62,7 @@
                 <figure><img src="images/img1.jpg" alt="screenshot of 3D Maya environment - saloon"></img>
                 <figcaption>3D Environment Created in Maya (<a href="https://drive.google.com/file/d/1BiljvLdi0EFnAuWSaYh6UFqS5HHlZ8eg/view?usp=sharing">Reel</a>)</figcaption></figure>
                 <figure><img src="images/Larson_0902_sketch01.jpg" alt="Taxi Driver movie collage (photoshop)"></img>
-                <figcaption>Bickle Blues (PS)</figcaption></figure>
+                <figcaption>God's Lonely Man (PS)</figcaption></figure>
                 <figure><img src="images/Larson_0902_sketch02.jpg" alt="Interstellar movie collage (photoshop)"></img>
                 <figcaption>Don't Let Me Leave (PS)</figcaption></figure>
                 <figure><img src="images/Larson_0908_sketch03.jpg" alt="shooting fanta cans off of a desk (photoshop)"></img>
@@ -114,11 +116,13 @@
                 <figcaption>The waters surrounding Catalina Island</figcaption></figure>
             </div>
         </div>
-        <h5 style="font-family:monaco">Image Sources:
-        <ul>
-            <li>Frame From “<i>Taxi Driver</i>” (1976), <i>dir. Martin Scorsese</i>, <i>Columbia Pictures</i></li>
-            <li>Photo of Matthew Broderick, Mia Sara, and Alan Ruck; Behind-The-Scenes Cast Photo from “<i>Ferris Bueller's Day Off</i>” (1986), <i>dir. John Hughes</i>, <i>Paramount Pictures</i></li>
-        </ul>
-        </h5>
+
+        <div class="normalfont" style="background-color: #77DD77; color: #000000; box-shadow: 5px 5px 10px rgba(0,0,0,0.3); border-radius: 15px; padding: 1.2em; border-radius: 10px; font-size: 0.75em;">
+            <u>Images Sources</u>:
+            <ul>
+                <li>Frame From “<i>Taxi Driver</i>” (1976), <i>dir. Martin Scorsese</i>, <i>Columbia Pictures</i></li>
+                <li>Photo of Matthew Broderick, Mia Sara, and Alan Ruck; Behind-The-Scenes Cast Photo from “<i>Ferris Bueller's Day Off</i>” (1986), <i>dir. John Hughes</i>, <i>Paramount Pictures</i></li>
+            </ul>
+        </div>
     </body>    
 </html>
