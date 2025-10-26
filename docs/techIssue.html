@@ -14,7 +14,6 @@
         <link rel="stylesheet" href="style.css">
         <script type="text/javascript" src="firstJava_EL.js">/**/</script>
         <link href='https://fonts.googleapis.com/css?family=Anta' rel='stylesheet'>
-        
     </head>
     <body style="font-family: tahoma,sans-serif">
         
@@ -30,26 +29,50 @@
         </nav>
         <h2 style="font-family:monaco; color: #FFD700">in-progress state of Digital Media/Tech Issue page (<a href="https://www.zotero.org/groups/6200603/d4_el_virtualproduction/library">Zotero Library Link</a>)</h2>
 
-        <svg
-                class="filmreel"
-                width="200"
-                height="200"
-                viewBox="0 0 200 200"
-                style="background:#222; box-shadow: 5px 5px 10px rgba(0,0,0,0.3); border-radius:20px;">
-            <g style="transform-origin: 100px 100px; animation: spin 10s linear infinite;">
-                <circle cx="100" cy="100" r="90" fill="#444" stroke="#222" stroke-width="8"/>
-                <circle cx="100" cy="100" r="50" fill="#666" stroke="#333" stroke-width="6"/>
+        <svg class="filmreel" width="200" height="200" viewBox="0 0 200 200" style="background:#111; box-shadow: 5px 5px 15px rgba(0,0,0,0.5); border-radius:20px;">
 
-                <circle cx="100" cy="42" r="25" fill="#222"/>
-                <circle cx="150" cy="70" r="25" fill="#222"/>
-                <circle cx="150" cy="130" r="25" fill="#222"/>
-                <circle cx="100" cy="158" r="25" fill="#222"/>
-                <circle cx="50" cy="130" r="25" fill="#222"/>
-                <circle cx="50" cy="70" r="25" fill="#222"/>
+            <g stroke="#0ff" stroke-opacity="0.2" stroke-width="1">
+                <line x1="20" y1="0" x2="20" y2="200"/>
+                <line x1="40" y1="0" x2="40" y2="200"/>
+                <line x1="60" y1="0" x2="60" y2="200"/>
+                <line x1="80" y1="0" x2="80" y2="200"/>
+                <line x1="100" y1="0" x2="100" y2="200"/>
+                <line x1="120" y1="0" x2="120" y2="200"/>
+                <line x1="140" y1="0" x2="140" y2="200"/>
+                <line x1="160" y1="0" x2="160" y2="200"/>
+                <line x1="180" y1="0" x2="180" y2="200"/>
+                <line x1="0" y1="20" x2="200" y2="20"/>
+                <line x1="0" y1="40" x2="200" y2="40"/>
+                <line x1="0" y1="60" x2="200" y2="60"/>
+                <line x1="0" y1="80" x2="200" y2="80"/>
+                <line x1="0" y1="100" x2="200" y2="100"/>
+                <line x1="0" y1="120" x2="200" y2="120"/>
+                <line x1="0" y1="140" x2="200" y2="140"/>
+                <line x1="0" y1="160" x2="200" y2="160"/>
+                <line x1="0" y1="180" x2="200" y2="180"/>
             </g>
+            <g style="transform-origin: 100px 100px; animation: spin 10s linear infinite;">
+                <circle cx="100" cy="100" r="90" fill="#444" stroke="#0FF" stroke-width="4" stroke-opacity="0.6"/>
+                <circle cx="100" cy="100" r="50" fill="#666" stroke="#0FF" stroke-width="3" stroke-opacity="0.6"/>
+                <circle cx="100" cy="42" r="25" fill="#222" stroke="#0FF" stroke-width="2" stroke-opacity="0.5"/>
+                <circle cx="150" cy="70" r="25" fill="#222" stroke="#0FF" stroke-width="2" stroke-opacity="0.5"/>
+                <circle cx="150" cy="130" r="25" fill="#222" stroke="#0FF" stroke-width="2" stroke-opacity="0.5"/>
+                <circle cx="100" cy="158" r="25" fill="#222" stroke="#0FF" stroke-width="2" stroke-opacity="0.5"/>
+                <circle cx="50" cy="130" r="25" fill="#222" stroke="#0FF" stroke-width="2" stroke-opacity="0.5"/>
+                <circle cx="50" cy="70" r="25" fill="#222" stroke="#0FF" stroke-width="2" stroke-opacity="0.5"/>
+            </g>
+            <style>
+                @keyframes spin{
+                    0% {transform: rotate(0deg);}
+                    100% {transform: rotate(360deg);}
+                }
+            </style>
         </svg>
 
-        <p style="background-color: #1A1A1A; color: #FFFFFF; box-shadow: 5px 5px 10px rgba(0,0,0,0.3); border-radius: 15px; padding: 1.2em; font-family: Anta;">Digital Media/Tech Issue - Virtual Production</p>
+
+        <p style="background-color: #1A1A1A; color: #FFD700; text-align: center; box-shadow: 5px 5px 10px rgba(0,0,0,0.3); border-radius: 15px; padding: 1.2em; font-family: Anta; font-size: 2.2em;font-weight: bold;">
+            Virtual Production
+        </p>
 
         <figure style="text-align: center;">
             <img src="images/VP_01.jpg" alt="image of rear-screen projection in old film" style="border: 10px double #F5A623; border-radius: 10px; width: 33%; display: block; margin: 0 auto;"/>
@@ -58,45 +81,61 @@
         
         <section style="box-shadow: 5px 5px 10px rgba(0,0,0,0.3); border-radius: 15px;" class="sec1">
         <p class="clapper" style="text-align: center; padding: 1em; font-family: Anta;"><span><strong><u>WHAT IS VIRTUAL PRODUCTION?</u></strong></span></p>
-            <ul style="background-color: #1A1A1A; color: #FFFFFF; padding: 1.2em; border-radius: 10px; font-family: Anta;">
-                <li>Definition of Virtual Production</li>
-                <li>History (different technologies, rough timeline of evolution)</li>
-                <li>Current usages and examples (including data/sources)</li>
-            </ul>
+            <p class="film-fact">
+                Over 50% of major studio films now use virtual production techniques, blending real-time 3D environments with live-action footage.
+            </p>
+            <p style="background-color: #1A1A1A; color: #FFFFFF; padding: 1.2em; border-radius: 10px; font-family: Anta;">
+                <span style="display: inline-block; text-indent: 3em;">Virtual production is reshaping filmmaking, by merging live-action performance with real-time digital environments. Using technologies like LED volume stages, motion tracking, and real-time rendering engines (like <i>Unreal</i>), filmmakers can immerse actors directly into virtual sets, allowing for immediate visual feedback and reducing reliance on post-production (<i>Barnett; Bodini; Silva Jasaui</i>). This approach, which evolved from traditional green/blue-screen techniques (and even older techniques like rear-screen projection), enables faster iteration and more realistic lighting interactions, offering greater creative flexibility in filmmaking (<i>Liu; Camille; Frank; Willment</i>).</span>
+                <br>
+                <br>
+                <span style="display: inline-block; text-indent: 3em;">However, virtual production also presents challenges. It requires significant investment in specialized equipment and skilled artists, which can be a barrier for smaller studios (<i>Swords; Azzarelli; Boutellier; Zhou</i>). Additionally, the shift from post-production to pre-production problem-solving demands close collaboration among directors, cinematographers, and technical teams to coordinate complex setups. Despite these hurdles, virtual production is rapidly gaining traction, with the global market projected to reach $6.8 billion by 2030, reflecting its growing adoption across the industry (<i>Grand View Research</i>).</span>
+            </p>
         </section>
-            
-        
+
         <figure style="text-align: center;">
             <img src="images/VP_02.jpeg" alt="image of matte painter for Star Wars" style="border: 10px double #F5A623; border-radius: 10px; width: 33%; display: block; margin: 0 auto;"/>
             <figcaption style="font-family: Anta;" class="figs">Matte Painting</figcaption>
         </figure>
         
         <section style="box-shadow: 5px 5px 10px rgba(0,0,0,0.3); border-radius: 15px;" class="sec2"><p class="clapper" style="text-align: center; padding: 1em; font-family: Anta"><span><strong><u>PROS OF VIRTUAL PRODUCTION</u></strong> <a href="#top">^</a></span></p>
-        <ul style="background-color: #1A1A1A; color: #FFFFFF; padding: 1.2em; border-radius: 10px; font-family: Anta;">
-            <li>More environmentally sustainable than other forms of production</li>
-            <li>Consistently-advancing technology/realism</li>
-            <li>LED Volume: Gives an actor more to respond to than green/blue screen or performance capture (in most cases)</li>
-            <li>LED Volume: More organic, situational scene lighting</li>
-            <li>Different disciplines are becoming much more intertwined (Film/VFX/Game Design - good or bad?)</li>
-            <li>More AI implementation (good or bad?)</li>
-            <li>Other positive applications outside of film</li>
-            <li>Data/sources (visual of how LED Volumes work?)</li>
-        </ul>
+            <p class="film-fact-two">
+                <i>The Mandalorian</i> (2019) was the first major production to use ILM's LED volume <i>StageCraft</i> technology for virtual sets.
+            </p>
+            <p style="background-color: #1A1A1A; color: #FFFFFF; padding: 1.2em; border-radius: 10px; font-family: Anta;">
+                <span style="display: inline-block; text-indent: 3em;">One of the standout and often overlooked advantages of virtual production is its potential for environmental sustainability. Traditional film shoots often require large crews, extensive location travel, and energy-intensive lighting setups. By shifting scenes to LED volume stages or virtual environments, productions can drastically reduce travel, construction, and on-set power consumption - while still achieving realistic and immersive visuals (<i>Barnett; Frank; Sawicki</i>). This also allows filmmakers to iterate quickly without committing to costly physical sets that can be scrapped or abandoned, further reducing waste.</span>
+<br>
+                <br>
+
+                <span style="display: inline-block; text-indent: 3em;">Additionally, the mere technological realism and flexibility of virtual production has grown rapidly in recent years. Real-time rendering engines and LED volumes provide actors with interactive, photorealistic environments, enabling more natural performances compared to traditional green-screen setups or motion capture alone (<i>Camille; Bodini; Silva Jasaui</i>). LED volumes also offer organic, situational lighting, where the virtual environment itself lights the actors and sets dynamically, producing more realistic and cohesive images on camera. This integration of multiple disciplines — film, VFX, and even game design — has in turn fostered new creative workflows where artistic and technical teams collaborate more closely, often improving both speed and quality of production (<i>Willment; Azzarelli</i>).</span>
+<br>
+                <br>
+                <span style="display: inline-block; text-indent: 3em;">Another major benefit is the increasing incorporation of AI and intelligent cinematography. Tools that assist with camera tracking, scene composition, and even virtual performers (e.g., Zhou’s "Sophia-in-Audition" project) allow filmmakers to explore shots and sequences that would have been prohibitively expensive or logistically impossible in the past. AI can also enhance previsualization, lighting simulations, and automated compositing, giving artists a lot more time to focus on storytelling (<i>Azzarelli; Frank</i>). Beyond traditional film and TV, these technologies are finding applications in things like live events, education, and simulation training, where interactive, real-time virtual environments can teach, engage, and entertain audiences in innovative ways (<i>Boutellier; Frank</i>).</span>
+<br>
+                <br>
+                <span style="display: inline-block; text-indent: 3em;">Finally, the LED volume itself serves as a compelling data-driven tool. By using real-time cameras and tracking systems, productions can visualize exactly how scenes will look in post-production <i>while filming</i>, minimizing guesswork and allowing immediate adjustments to lighting, camera angles, and scene composition (<i>Camille; Silva Jasaui</i>). This immediate feedback loop not only improves efficiency, but also empowers directors and cinematographers to make more informed creative choices on set.</span></p>
         </section>
         
         <figure style="text-align: center;">
             <img src="images/VP_03.jpg" alt="image of blue/green screen use in film" style="border: 10px double #F5A623; border-radius: 10px; width: 33%; display: block; margin: 0 auto;"/>
-            <figcaption style="font-family: Anta" class="figs">Green/Blue Screen Compositing</figcaption>
+            <figcaption style="font-family: Anta" class="figs">Blue Screen Compositing</figcaption>
         </figure>
         
         <section style="box-shadow: 5px 5px 10px rgba(0,0,0,0.3); border-radius: 15px;" class="sec3"><p class="clapper" style="text-align: center; padding: 1em; font-family: Anta"><span><strong><u>CONS OF VIRTUAL PRODUCTION</u></strong> <a href="#top">^</a></span></p>
-        <ul style="background-color: #1A1A1A; color: #FFFFFF; padding: 1.2em; border-radius: 10px; font-family: Anta;">
-            <li>More reliance on Unreal Engine (and other game technologies) is required, and has created a gap between VFX education and current VFX knowledge requirements</li>
-            <li>Sky/floor camera movement limitations, perception disadvantages, space limitations</li>
-            <li>Rendering/capturing/dressing big LED displays requires a lot of time, money, resources, and testing</li>
-            <li>A lot of Virtual Production work nowadays means that post-production comes first, in terms of finalizing the look of a rendered scene <i>before</i> shooting rather than <i>after</i> (earlier digital practices)</li>
-            <li>Data/sources</li>
-        </ul>
+            <p class="film-fact-three">
+                On large LED stages, data streams for lights, textures, and camera tracking can exceed 1 TB/hour.
+            </p>
+        <p style="background-color: #1A1A1A; color: #FFFFFF; padding: 1.2em; border-radius: 10px; font-family: Anta;">
+            <span style="display: inline-block; text-indent: 3em;">While virtual production offers wide creative flexibility, it also comes with significant technical and logistical challenges. One major concern is the heavy reliance on real-time game engines like Unreal Engine, which has created a knowledge gap in traditional VFX education/previous required knowledge and modern workflow practices (<i>Barnett; Boutellier; Swords</i>). Many emerging filmmakers and crew members now need expertise in both cinematic storytelling <i>and</i> interactive engine operation, which can create barriers for smaller teams or those trained in conventional film/TV pipelines. This technological dependence also extends to LED volume setups, where the rendering, capturing, and “dressing” of large-scale displays demands extensive preparation, hardware resources, and testing — all tasks that are both time-consuming and expensive (<i>Camille; Silva Jasaui; Sawicki</i>).</span>
+            <br>
+            <br>
+            <span style="display: inline-block; text-indent: 3em;">There are also spatial and perceptual limitations inherent in LED-based virtual environments. Camera movements for ceilings, floors, and wide angles can be restricted by the physical size of the LED stage, which can then affect the realism of shots and potentially limit cinematic freedom (<i>Iseli; Liu</i>). In addition, some subtle visual cues, like depth perception or peripheral lighting consistency, may not translate perfectly through a virtual stage, which could impact audience immersion if not carefully managed (<i>Virtually Real; Bodini</i>). These limitations mean that despite the promise, virtual production doesn't <i>fully</i> replace traditional filmmaking techniques, particularly for productions with complex spatial demands or highly dynamic camera setups.</span>
+            <br>
+            <br>
+            <span style="display: inline-block; text-indent: 3em;">Another consideration is that much of the creative work now shifts toward pre-production, effectively moving tasks that were usually post-production into the planning phase (<i>Swords; Frank</i>). Directors and VFX teams often finalize the look of a scene digitally <i>before</i> shooting, which can reduce the spontaneity and iterative decision-making that occurs on a traditional, physical set. The technology is powerful, but it imposes a new workflow that can be <i>inflexible</i> and heavily dependent on highly skilled artists and expensive infrastructure (<i>Willment; Azzarelli; Zhou</i>).</span>
+            <br>
+            <br>
+            <span style="display: inline-block; text-indent: 3em;">Finally, technical requirements — things like high-performance GPUs, real-time rendering rigs, and large-scale LED walls — pose both cost and accessibility barriers. Smaller studios may struggle to adopt virtual production fully, and the resource demands for high-quality output can sometimes outweigh the efficiencies offered by shooting in a more controlled virtual environment (<i>Sawicki; Silva Jasaui</i>). These challenges illustrate that while virtual production represents a remarkable evolution in filmmaking, it isn't without its trade-offs in cost, technical complexity, and creative constraints.</span>
+        </p>
         </section>
         
         <figure style="text-align: center;">
@@ -105,15 +144,24 @@
         </figure>
 
         <section style="box-shadow: 5px 5px 10px rgba(0,0,0,0.3); border-radius: 15px;" class="sec4"><p class="clapper" style="text-align: center; padding: 1em; font-family: Anta"><span><strong><u>IMPACTS AND OVERVIEW</u></strong> <a href="#top">^</a></span></p>
-        <ul style="background-color: #1A1A1A; color: #FFFFFF; padding: 1.2em; border-radius: 10px; font-family: Anta;">
-            <li>Current status and possible future evolutions</li>
-            <li>Benefits/applications outside of film</li>
-            <li>Improving pipelines and workflows</li>
-            <li>Shooting options more diverse than ever, but still just another tool</li>
-            <li>Still some R&amp;D required, but inevitable</li>
-            <li>Discussion of infamous question in relation to virtual production: what makes a film real, or real enough? Does it need to be, etc.?</li>
-            <li>Data/sources</li>
-        </ul>
+            <p class="film-fact-four">
+                Real-time camera tracking can produce over 500,000 positional data points <i>per second</i> on set.
+            </p>
+        <p style="background-color: #1A1A1A; color: #FFFFFF; padding: 1.2em; border-radius: 10px; font-family: Anta;">
+            <span style="display: inline-block; text-indent: 3em;">Today, virtual production is increasingly becoming a standard part of both blockbuster and independent filmmaking, with rapid technological improvements hinting at an even broader adoption in the near future (<i>Barnett; Willment; Bodini</i>). As real-time rendering engines, LED volumes, and AI-assisted cinematography evolve, productions can achieve higher visual fidelity with faster turnaround, enabling directors to experiment more freely with lighting, camera angles, and scene composition. While the technology is still maturing, the trend is clear: virtual production will <i>not</i> replace traditional filmmaking, but it will continue to expand the creative toolkit, offering options that were previously impractical or impossible (<i>Silva Jasaui; Frank</i>).</span>
+<br>
+            <br>
+            <span style="display: inline-block; text-indent: 3em;">Beyond film and TV, virtual production is showing promise in live events, education, simulation training, and other immersive experiences (<i>Boutellier; Frank</i>). Interactive virtual environments allow audiences to engage with content in new ways, from live concerts with real-time background simulations, to educational programs where learners can navigate realistic scenarios safely. These applications demonstrate that the benefits of virtual production extend well past entertainment, offering innovative workflows for whatever industries that might require real-time visualization and collaboration.</span>
+            <br>
+            <br>
+            <span style="display: inline-block; text-indent: 3em;">In terms of workflow, virtual production has improved pipeline efficiency by allowing for more iterative and integrated collaboration between different creative departments (<i>Willment; Azzarelli</i>). Previsualization, lighting, and compositing can be adjusted on the fly, reducing costly re-shoots or post-production fixes. The ability to combine VFX, film, <i>and</i> game design principles creates a more interconnected production environment, though it also emphasizes the need for multidisciplinary skills and continued R&D to optimize tools and processes (<i>Barnett; Swords; Zhou</i>).</span>
+            <br>
+            <br>
+            <span style="display: inline-block; text-indent: 3em;">Despite the advantages, virtual production still sparks philosophical and practical questions about cinematic realism. What makes a film “real enough” when entire worlds are artificially rendered? Does audience immersion depend on physical authenticity, or on perceptual plausibility and narrative engagement? Writers like Iseli and Bodini suggest that while perfect realism may not be <i>necessary</i>, the perceptual and emotional cues enabled by LED volumes and real-time rendering seem to be sufficient in convincing viewers, provided the creative choices support the story.</span>
+            <br>
+            <br>
+            <span style="display: inline-block; text-indent: 3em;">The evolution of virtual production seems inevitable, with incremental improvements in engine fidelity, AI assistance, and interactive stage technology likely to reduce current limitations. While challenges remain — cost, spatial constraints, training requirements, and workflow integrations — the technology continues to introduce possibilities for filmmakers, providing unprecedented flexibility and creative control. In short, virtual production is <i>not</i> a replacement for traditional filmmaking, but a transformative tool that expands what directors, cinematographers, and VFX artists can achieve, all while opening doors for broader applications outside the traditional screen-based media landscape.</span>
+        </p>
         </section>
         
         <figure style="text-align: center;">

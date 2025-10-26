@@ -192,11 +192,11 @@ p.clapper{
     color: #FFD700;
     padding: 0.5rem 1rem;
     border-radius: 5px;
-    font-weight: bold;
-    font-family: sans-serif;
     text-shadow: 2px 2px 3px rgba(0,0,0,.99);
     transition: transform 0.5s ease;
     transform-origin: left;
+    z-index: 1;
+    position: relative;
 }
 
 p.clapper span{
@@ -204,10 +204,87 @@ p.clapper span{
     padding: 0.5em 0.5em;
     border-radius: 6px;
     color: #FFD700;
+    z-index: 1;
+    position: relative;
 }
 
 p.clapper:hover{
     transform: rotate(-3.5deg);
+}
+
+.film-fact {
+    position: absolute;
+    top: 100px;
+    left: 260px;
+    width: 100%;
+    text-align: center;
+    font-family: "Anta";
+    font-size: 13px;
+    color: white;
+    z-index: 0;
+    opacity: 0;
+    visibility: hidden;
+    animation: fadeInFact 2s ease forwards;
+    animation-delay: 1s;
+}
+
+.film-fact-two {
+    position: absolute;
+    top: 100px;
+    left: 300px;
+    width: 100%;
+    text-align: center;
+    font-family: "Anta";
+    font-size: 13px;
+    color: white;
+    z-index: 0;
+    opacity: 0;
+    visibility: hidden;
+    animation: fadeInFact 2s ease forwards;
+    animation-delay: 1s;
+}
+
+.film-fact-three {
+    position: absolute;
+    top: 100px;
+    left: 345px;
+    width: 100%;
+    text-align: center;
+    font-family: "Anta";
+    font-size: 13px;
+    color: white;
+    z-index: 0;
+    opacity: 0;
+    visibility: hidden;
+    animation: fadeInFact 2s ease forwards;
+    animation-delay: 1s;
+}
+
+.film-fact-four {
+    position: absolute;
+    top: 100px;
+    left: 368px;
+    width: 100%;
+    text-align: center;
+    font-family: "Anta";
+    font-size: 13px;
+    color: white;
+    z-index: 0;
+    opacity: 0;
+    visibility: hidden;
+    animation: fadeInFact 2s ease forwards;
+    animation-delay: 1s;
+}
+
+@keyframes fadeInFact {
+    from {
+        opacity: 0;
+        visibility: hidden;
+    }
+    to {
+        opacity: 1;
+        visibility: visible;
+    }
 }
 
 .figs{
@@ -267,8 +344,3 @@ html, body {
 iframe {
     filter: drop-shadow(4px 4px 5px rgba(0, 0, 0, 0.5));
 }
-
-
-
-
-
