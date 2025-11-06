@@ -368,3 +368,61 @@ iframe {
     font-size: 1.1em;
     margin: 0;
 }
+
+.history {
+    display: flex;
+    align-items: center;
+    background-color: #F9C47D;
+    color: black;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
+    border-radius: 15px;
+    padding: 1.2em;
+    font-family: "Anta", sans-serif;
+    justify-content: center;
+}
+
+.history img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.history p {
+    font-size: 1.1em;
+}
+
+.historyTable {
+    border-collapse: collapse;
+    justify-content: center;
+    width: 95%;
+}
+
+.historyTable th,
+.historyTable td {
+    border: 3px solid gray;
+    padding: 10px 10px;
+    text-align: left;
+}
+
+.historyTable th {
+    background-color: #FADADD;
+    font-weight: bold;
+}
+
+.historyTable tr:nth-child(even) {
+    background-color: #FADADD;
+}
+
+.historyTable tr:nth-child(odd) {
+    background-color: #F5F5F5;
+}
+
+.historyTable tr:hover {
+    background-color: #00A36C;
+}
+
+button{
+    font-family: "Anta", sans-serif;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+}
